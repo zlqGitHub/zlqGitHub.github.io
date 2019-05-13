@@ -1,0 +1,243 @@
+/***************通用样式****************/
+body{
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    color:#000;
+}
+/*定义字体*/
+@font-face {
+    font-family: lk;
+    src: url("../fonts/lk.eot") format("embedded-opentype"),
+        url("../fonts/lk.svg") format("svg"),
+        url("../fonts/lk.ttf") format("truetype"),
+        url("../fonts/lk.woff") format("woff");
+}
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: lk;
+    font-style: normal;
+}
+
+#about,#hot,#link{
+    padding: 20px 0;
+}
+#about .title,#hot .title,#link .title{
+    /* 注意：flex布局时(伸缩布局)，作用的是子元素样式 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/***************通用样式****************/
+
+/*头部样式*/
+.top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+.top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+.top-bar .container .row .top-bar-1 a img{
+    display: none;
+    position: absolute;   /* 定位元素，默认浮动，不占位 */
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -10px;
+    z-index: 9999;
+ }
+.top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+.icon-iphone::before{
+    content: '\e958';
+    font-size: 13px;
+}
+.icon-tel::before{
+    content: '\e942';
+    font-size: 13px;
+}
+.btn-register {
+    color: #FFFFFF;
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #086DF2;
+    border-color: #F4F7F7;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register .badge {
+    color: #0AB4F7;
+    background-color: #FFFFFF;
+}
+#header .navbar-lk{
+    margin-bottom: 0;
+    background: #fff;
+}
+.navbar-lk .navbar-header .navbar-brand{
+    height: 70px;
+    padding: 10px 15px;
+}
+#header .navbar-lk .navbar-nav a{
+    height: 70px;
+    line-height: 40px;
+}
+#header .navbar-lk .navbar-nav li.active a,
+#header .navbar-lk .navbar-nav li a:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #0AB4F7;
+}
+.navbar-toggle {
+    margin-top: 18px;
+}
+
+#carousel .item{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/* 通过媒体查询监听页面的大小并进行设置，使得背景图片能够正常展示 */
+@media screen and (min-width: 800px) {
+    #carousel .item{
+        height: 410px;
+    }
+}
+
+/***************关于我们****************/
+#about .title img{
+    padding-bottom: 15px;
+}
+#about .container .row p{
+    line-height: 29px;
+    font-size: 15px;
+}
+
+/***************产品特色*****************/
+#product{
+    background: #f0f0f0;
+    padding: 30px 0;
+}
+/* li.active 指当前激活的li元素下的a元素 */
+#product .nav li.active a{
+    border: none;
+    border-bottom: 2px solid #0AB4F7;
+}
+#product .nav a{
+    background: transparent;
+    color: #999;
+    font-size: 17px;
+}
+
+#product1,#product2,#product3{
+    padding-top: 20px;
+}
+#product1 .col-md-8{
+    padding: 40px 0;
+}
+#product1 .col-md-8 .media-body{
+    padding-top: 100px;
+}
+#product1 .col-md-8 #pd_one_2 .breadcrumb{
+    background: transparent;
+    margin: 15px 0;
+}
+#product2 .col-md-8{
+    padding: 100px 0;
+}
+#product3 .pd-left{
+    padding: 40px 0;
+}
+
+
+/*************热门课程****************/
+#hot .media .media-left{
+    width: 20%;
+}
+#hot .media .media-body{
+    width: 60%;
+    vertical-align:middle;
+}
+#hot .media .media-right{
+    width: 20%;
+    vertical-align: middle;
+}
+
+/*************友情链接**************/
+#link .logos{
+    text-align: center;
+}
+#link .logos li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+/*************底部信息**************/
+#footer{
+    width: 100%;
+    height: 200px;
+    background: url("../imgs/ft_bg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 20px;
+    color: #fff;
+}
+#footer .row ul{
+    list-style: none;
+}
+#footer .row ul li{
+    line-height: 40px;
+}
+#footer .row ul li a{
+    color: #fff
+}
+#footer .one,#footer .two{
+    height: 180px;
+    border-right: 1px solid #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer .three{
+    margin: 50px 0 0 40px;
+}
+#footer .three a{
+    text-decoration: none;
+}
+

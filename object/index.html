@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--手机端的适配模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>撩课学院-IT人的自我成长社区</title>
+    <!--站点图标-->
+    <link rel="icon" type="image/x-icon" href="./imgs/lk_favicon.ico">
+    <!-- 引入Bootstrap核心样式文件（必须） -->
+    <link href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!--头部-->
+    <header id="header">
+        <!--头部上部分-->
+        <div class="top-bar hidden-sm hidden-xs text-center text-muted">
+           <div class="container">
+                <div class="row">
+                    <div class="top-bar-1 col-md-2">
+                        <a href="#" class="text-muted">
+                            <i class="icon-iphone"></i>
+                            <span>关注微信号</span>
+                            <span class="caret"></span>
+                            <img src="./imgs/ewm_xzh.jpg" alt="" width="120px">
+                        </a>
+                    </div>
+                    <div class="top-bar-2 col-md-5">
+                        <i class="icon-tel"></i>
+                        <span>8888-555-6666（服务时间：9:00-21:00）</span>
+                    </div>
+                    <div class="top-bar-3 col-md-2">
+                        <a href="#" class="text-muted">校企合作</a>
+                        <a href="#" class="text-muted">培训师</a>
+                    </div>
+                    <div class="top-bar-4 col-md-3">
+                        <!--注意：此处的 btn-register 可以通过http://blog.koalite.com/bbg/来进行修改、设置-->
+                        <a class="btn btn-default btn-sm btn-primary btn-register" href="#" role="button">免费注册</a>
+                        <a href="#" role="button" class="text-muted" data-toggle="modal" data-target="#lk_login">立即注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--头部下部分-->
+        <nav class="navbar navbar-default navbar-static-top navbar-lk">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="./imgs/lk_logo_sm.png" alt="" width="180">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="javascript:;">关于我们 </a></li>
+                        <li><a href="javascript:;">课程介绍</a></li>
+                        <li><a href="javascript:;">热门课程</a></li>
+                        <li><a href="javascript:;">名师授课</a></li>
+                        <li><a href="javascript:;">课堂互动</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--轮播图-->
+    <section id="carousel" class="carousel slide" data-ride="carousel">
+        <!--指示器-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 中间内容 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" data-sm-img="./imgs/slide_01_640x340.jpg" data-lg-img="./imgs/slide_01_2000x410.jpg">
+                <!--大图用背景图，小图通过插入img元素来实现-->
+            </div>
+            <div class="item" data-sm-img="./imgs/slide_02_640x340.jpg" data-lg-img="./imgs/slide_02_2000x410.jpg">
+
+            </div>
+            <div class="item" data-sm-img="./imgs/slide_03_640x340.jpg" data-lg-img="./imgs/slide_03_2000x410.jpg">
+
+            </div>
+        </div>
+        <!-- 控制器 -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <!--注意：此处的类中用到了 -icon ，所以匹配到了之前的定义好的类，需要进行处理-->
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </section>
+
+    <!--关于我们-->
+    <section id="about" class="hidden-xs hidden-sm">
+        <div class="title text-center">
+            <h1><strong>关于我们</strong></h1>
+            <img src="./imgs/star.png" class="img-responsive" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-muted">撩课学院是秣码教育旗下线上教育品牌。成立于2017年06月， 集聚强大的IT讲师资源，
+                        独特的课程服务模式，通过M2O等新型 教育方式， 真正解决开发者在成长过程中的各
+                        种技术瓶颈，帮助学生在IT职场取得成功。</p>
+                    <p class="text-muted">撩课学院明星讲师云集，包括李南江、叶建华、王顺子、高新强等十几位专业实战型讲师团队，
+                        悉心打造六大综合体系课程，细致且全面，全面助力学生成长。</p>
+                    <p class="text-muted">撩课学院课程体系完善，包含HTML5+全栈开发、Python+人工智能、JavaEE、Go语言+区块链、
+                        UI/UE设计、新媒体、电商运营等系列课程。</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive img-rounded" src="./imgs/team.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--产品特色-->
+    <section id="product">
+        <div class="container">
+            <div class="row">
+                <!-- 选项卡 -->
+                <div style="overflow:auto;">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#product1" aria-controls="home" role="tab" data-toggle="tab">在线大学</a></li>
+                        <li role="presentation"><a href="#product2" aria-controls="profile" role="tab" data-toggle="tab">会员专享</a></li>
+                        <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                        <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                        <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                        <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                        <li class="pull-right hidden-sm hidden-xs"><a href="#">更多</a></li>
+                    </ul>
+                </div>
+                <!-- 中间内容 -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active fade in active" id="product1">
+                        <!--注意只要用到栅格布局，就是用如下的结构-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div id="pd_one_1" class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="./imgs/ewm_xzh.jpg" alt="二维码" width="140">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading text-muted">更多资讯欢迎</h5>
+                                            <h5 class="media-heading text-muted">关注撩课学院</h5>
+                                        </div>
+                                    </div>
+                                    <div id="pd_one_2">
+                                        <ol class="breadcrumb lead">
+                                            <li><a href="#">HTML5+全栈</a></li>
+                                            <li><a href="#">Python+人工智能</a></li>
+                                            <li><a href="#">JavaEE</a></li>
+                                            <li><a href="#">Go语言+区块链</a></li>
+                                        </ol>
+                                    </div>
+                                    <div id="pd_one_3">
+                                        <h1>欢迎来到IT人的在线大学&nbsp;&nbsp;
+                                            <strong class="text-danger">撩课学院</strong>
+                                        </h1>
+                                    </div>
+                                    <div id="pd_one_4">
+                                        <button class="btn btn-primary btn-lg" type="submit" style="margin-right: 20px;">课程咨询</button>
+                                        <button class="btn btn-default btn-lg" type="submit">了解更多</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img src="./imgs/iphoneX.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="product2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img src="./imgs/iphoneX2.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <h1 class="text-warning">撩课学院会员</h1>
+                                    <p class="lead">汇聚名师, 为你呈现前端、后端、移动端、大数据、人工智能等从零基础到项目实战连载课程内容。
+                                        专属的会员社群和私人订制服务, 1年365天持续更新课程全部免费学习!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="product3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 pd-left">
+                                    <h1 class="text-danger"><strong>案例驱动·体系贯穿·全面系统</strong></h1>
+                                    <h3>10-15分钟的视频 <span class="text-warning">知识点拆分讲解</span></h3>
+                                    <h4 class="text-muted" style="margin-bottom: 15px">玩转HTML5+全栈系列, 玩转Python+人工智能系列, 玩转JavaEE系列, 玩转Go+区块链系列</h4>
+                                    <div class="badge" style="padding: 15px 10px;">已更新3000+视频 | 100000+人订阅</div>
+                                </div>
+                                <div class="col-md-6 hidden-xs hidden-sm">
+                                    <img src="./imgs/macBook.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--热门课程-->
+    <section id="hot">
+        <div class="title">
+            <h1><strong>热门课程</strong></h1>
+            <div>
+                <img src="./imgs/star.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="./imgs/lnj.png" width="100" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                从零玩转HTML5+跨平台
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">李南江老师带你从零基础入门大前端开发, So Easy, Too Happy!</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            206节课
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="./imgs/wzs.png" width="100" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                从零玩转人工智能+Python系列
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">王顺子老师倾情打造, 各种奇淫技巧层出不穷, 赶紧到碗里来!</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            600+节课
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="./imgs/gxq.jpg" width="100" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                从零玩转JavaEE全系列
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">高新强老师全程高能, 只为成就更好的你! 学Java, 就选"高薪墙"!</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            700+节课
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="./imgs/yjh.png" width="100" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                从零玩转JavaScript+项目实战
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">叶建华老师带你轻松解读JavaScript的前世今生, 全程案例驱动讲解!</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            256节课
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="./imgs/yjh.png" width="100" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                从零玩转Vue+Node全系列
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">打通前后端, 真实企业项目实操, 内容涉及前端、后端、微信端, 让你一次学个够!</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            400+节课
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="./imgs/lnj.png" width="100" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                从零玩转jQuery+ajax系列
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">这里有用JQ做的小游戏, 也有JQ做的QQ音乐, 还有...., 你要学的, 江哥这里都有!</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            200+节课
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--友情信息-->
+    <section id="link">
+        <div class="title">
+            <h1><strong>友情链接</strong></h1>
+            <div>
+                <img src="./imgs/star.png" alt="">
+            </div>
+        </div>
+        <ul class="logos">
+            <li><a href="#"><img src="imgs/ibm-logo.png" width="100" alt=""></a></li>
+            <li><a href="#"><img src="imgs/facebook-logo.png" width="50" alt=""></a></li>
+            <li><a href="#"><img src="imgs/google-logo.png" width="50" alt=""></a></li>
+            <li><a href="#"><img src="imgs/airbnb-logo.png" width="100" alt=""></a></li>
+            <li><a href="#"><img src="imgs/swift-logo.png" width="50" alt=""></a></li>
+            <li><a href="#"><img src="imgs/paypal-logo.png" width="100" alt=""></a></li>
+            <li><a href="#"><img src="imgs/walmart-logo.png" width="100" alt=""></a></li>
+        </ul>
+    </section>
+
+    <!--底部信息-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 one">
+                    <div class="row">
+                        <ul class="col-md-6">
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">课程介绍</a></li>
+                            <li><a href="#">热门介绍</a></li>
+                        </ul>
+                        <ul class="col-md-6">
+                            <li><a href="#">名师授课</a></li>
+                            <li><a href="#">课堂互动</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 two">
+                    <h5>公司地址: 上海市松江区松江大学城</h5>
+                    <h5>联系电话: 15513268481</h5>
+                    <h5>地址邮箱: 1509874021@qq.com</h5>
+                </div>
+                <div class="col-md-3 three">
+                    <h5>联系我们:</h5>
+                    <a href="#">
+                        <img src="./imgs/weixin-h.png" width="50" data-toggle="tooltip" data-placement="bottom" title="加我微信">
+                        <img src="./imgs/xinlang-h.png" width="50" data-toggle="tooltip" data-placement="bottom" title="关注微博">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--立即登录-->
+    <div class="modal fade" id="lk_login" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">用户登录</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="请输入用户名">
+                    <input type="password" placeholder="请输入密码">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+<!--导入js文件-->
+<script src="./lib/jQuery/jquery-1.12.4.js"></script>
+<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>

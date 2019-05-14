@@ -1,0 +1,113 @@
+/****************** 头部样式 **********************/
+#header{
+	border: none;
+	border-radius: 0;
+}
+#header .navbar{
+	min-height: 40px;	
+	background-color: #333333;
+	border: none;
+}
+#header .container-fluid {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#header .navbar-nav > .active > a, 
+#header .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+#header .navbar-nav > li > a {
+    color: #B0B0B0;
+}
+#header .navbar-nav > li:hover > a {
+    color: #fff;
+}
+#header .navbar-nav > li > a {
+	line-height: 40px;
+    padding: 0 10px;
+}
+#header .navbar-nav > li > a.car{
+	padding: 0 20px;
+	margin-right: 50px;
+	background: #424242;
+}
+#header .navbar-nav > li > a.car:hover{
+	background: #fff;
+	color: #F87300;
+}
+#header .navbar-nav > li > a.car .carInfo{
+	position: absolute;
+	left: -210px;
+	width: 320px;
+	height: 100px;
+	line-height: 100px;
+	background: #fff;
+	box-shadow: 0 2px 5px #ccc;
+	font-size: 13px;
+	color: #424242;
+	text-align: center;
+	display: none;
+}
+#header .navbar .img{
+	display: none;
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	border-radius: 2px;
+	box-shadow: 0px 2px 5px #ccc;
+	background: #fff;
+	text-align: center;
+	padding-top: 15px;
+	left: -25px;
+	top: 42px;
+	
+}
+#header .navbar-nav .app:hover .img{
+	display: block;
+}
+/* 小箭头的生成 */
+.arrow{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+    /* transparent 透明色 */
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;    /* 向上 */
+	border-top-color: #ffffff;    /* 向下 */
+	border-left-color: #ffffff;    /* 向右 */
+	border-right-color: #ffffff;   /* 向左  */
+}
+/* 消息通知 */
+.modal .modal-body{
+	padding: 20px 25px;
+}
+.modal .modal-body p{
+	font-size: 14px;
+	color: #333333;
+}
+.modal .modal-body p a{
+	color: #FF7F00;
+	text-decoration: none;
+}
+.modal .modal-body .detail{
+    overflow: hidden;
+	margin-top: 20px;
+	height: 260px;
+	overflow-y: auto;
+	font-size: 14px;
+}
+.modal .modal-body .detail .span1{
+	display: inline-block;
+	color: #333333;
+	text-indent: 2em;
+	margin-bottom: 5px;
+}
+.modal .modal-body .detail .span2{
+	display: inline-block;
+	text-indent: 2em;
+	font-weight: 700;
+}
+
+
+/****************** 头部样式 **********************/

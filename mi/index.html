@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+		<title>小米商城 - 小米9、小米MIX 3、红米Note 7，小米电视官方网站</title>
+		<!-- 导入对应的css文件 -->
+		<link href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+	<body>
+		<!-- 头部导航条 (包含头上部分、头下部分) -->
+		<header id="header">
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						 aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse bgc navbar-static-top" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav tarbar-left">
+							<li class="" style="background-color: transparent;"><a href="#">小米商城 <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">MIUI</a></li>
+							<li><a href="#">loT</a></li>
+							<li><a href="#">云服务</a></li>
+							<li><a href="#">金融</a></li>
+							<li><a href="#">有品</a></li>
+							<li><a href="#">小爱开放台</a></li>
+							<li><a href="#">企业团购</a></li>
+							<li><a href="#">资质证照</a></li>
+							<li><a href="#">协议规则</a></li>
+							<li class="app">
+								<a href="#">下载app</a>
+								<div class="img">
+									<a href="#">
+										<em style="width:0;height:0;border-width:0 10px 10px;border-style:solid;border-color:transparent transparent #fff;position:absolute;top:-10px;left:50px;"></em>
+										<img src="./imgs/download.png" width="100" alt="">
+									</a>
+								</div>
+							</li>
+							<li><a href="#">Select Region</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right hidden-sm hidden-xs hidden-md">
+							<li><a href="#">登录</a></li>
+							<li><a href="#">注册</a></li>
+							<li><a href="#info" data-toggle="modal">消息通知</a></li>
+							<li class="">
+								<a href="#" class="car">
+									<!-- 此处使用字体图标 -->
+									<i class="icon-car">&#xe60c;</i>
+									购物车(0)
+									<div class="carInfo">
+										购物车中还没有商品，赶紧选购吧！
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- 消息通知 -->
+			<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header" style="background: #F5F5F5;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">协议声明</h4>
+						</div>
+						<div class="modal-body">
+							<p><a href="#">《小米商城用户协议》</a>、<a href="#">《账号协议》</a>、<a href="#">《隐私政策》</a>请您仔细阅读以上协议，其中有对您权利义务的特别约定等重要条款，同意后方可使用本软件</p>
+							<div class="detail">
+								<h3><strong>小米商城用户协议</strong></h3>
+								<p class="" style="float:right;font-size: 22px;color: #333333;padding: 10px 0;">版本日期：2018年12月18日</p>
+								<span class="span1">《小米商城用户协议》（以下简称“本协议”）是您（或称“用户”，指注册、登录、使用、浏览小米商城的个人或组织）与小米科技有限责任公司（平台运营主体）及其关联公司（包括但不限于小米通讯技术有限公司，以下简称“小米”）及其合作单位（包括但不限于第三方商家）之间关于小米商城网站（域名为www.mi.com，简称本网站）与小米产品、程序及服务所订立的协议。小米和合作单位分别就您在本网站接受服务的过程中享受的权利和承担的义务，与您签订本协议，并独立向您承担责任，互不承担保证、连带或共同责任等。</span>
+								<span class="span2">小米在此特别提醒用户认真阅读 、充分理解---本协议中各条款。您对本协议的接受即自愿接受全部条款的约束，请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款，尤此类条款将以加粗的形式提示您注意。如您同意本协议并完成全部注册程序，即表示您已充分阅读、理解并接受本协议的全部内容，并与小米达成一致，成为小米商城平台用户。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序。</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">不同意</button>
+							<button type="button" class="btn btn-primary">同意</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<!-- 中间轮播图区域 (轮播图、下面广告区) -->
+		<section id="carousel">
+			中间轮播图区域
+		</section>
+
+		<!-- 广告区1 (上不广告、展示区)-->
+		<section id="ad1">
+			广告区1
+		</section>
+
+		<!-- 广告区2 -->
+		<section id="ad2">
+			广告区
+		</section>
+
+		<!-- 为你推荐 -->
+		<section id="recommend">
+			为你推荐
+		</section>
+
+		<!-- 热评产品 -->
+		<section id="product">
+			热评产品
+		</section>
+
+		<!-- 内容区 -->
+		<section id="content">
+			内容区
+		</section>
+
+		<!-- 视频区 -->
+		<section id="video">
+			视频区
+		</section>
+
+		<!-- 底部区域 -->
+		<footer>
+			底部区域
+		</footer>
+
+
+
+
+
+		<!-- 补充： -->
+		<!-- 小箭头的实现 -->
+		<!-- <div style="width: 100px;height: 100px;background: red;position: relative;">
+			<span class="arrow"></span>
+		</div> -->
+
+
+		<!-- 导入js文件 -->
+		<script src="./lib/jQuery/jquery-1.12.4.js"></script>
+		<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

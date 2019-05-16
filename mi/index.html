@@ -12,8 +12,9 @@
 		<link rel="stylesheet" href="./css/index.css">
 	</head>
 	<body>
-		<!-- 头部导航条 (包含头上部分、头下部分) -->
-		<header id="header">
+		<!-- 头部导航条 (包含头上部分) -->
+		<header id="header" class="clearfix">
+			<!-- 顶部导航 -->
 			<nav class="navbar navbar-default navbar-static-top">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -80,7 +81,8 @@
 								<h3><strong>小米商城用户协议</strong></h3>
 								<p class="" style="float:right;font-size: 22px;color: #333333;padding: 10px 0;">版本日期：2018年12月18日</p>
 								<span class="span1">《小米商城用户协议》（以下简称“本协议”）是您（或称“用户”，指注册、登录、使用、浏览小米商城的个人或组织）与小米科技有限责任公司（平台运营主体）及其关联公司（包括但不限于小米通讯技术有限公司，以下简称“小米”）及其合作单位（包括但不限于第三方商家）之间关于小米商城网站（域名为www.mi.com，简称本网站）与小米产品、程序及服务所订立的协议。小米和合作单位分别就您在本网站接受服务的过程中享受的权利和承担的义务，与您签订本协议，并独立向您承担责任，互不承担保证、连带或共同责任等。</span>
-								<span class="span2">小米在此特别提醒用户认真阅读 、充分理解---本协议中各条款。您对本协议的接受即自愿接受全部条款的约束，请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款，尤此类条款将以加粗的形式提示您注意。如您同意本协议并完成全部注册程序，即表示您已充分阅读、理解并接受本协议的全部内容，并与小米达成一致，成为小米商城平台用户。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序。</span>
+								<span class="span2">小米在此特别提醒用户认真阅读
+									、充分理解---本协议中各条款。您对本协议的接受即自愿接受全部条款的约束，请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款，尤此类条款将以加粗的形式提示您注意。如您同意本协议并完成全部注册程序，即表示您已充分阅读、理解并接受本协议的全部内容，并与小米达成一致，成为小米商城平台用户。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序。</span>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......
 							</div>
 						</div>
@@ -93,46 +95,1926 @@
 			</div>
 		</header>
 
-
-		<!-- 中间轮播图区域 (轮播图、下面广告区) -->
-		<section id="carousel">
-			中间轮播图区域
+		<!-- 中间轮播图区域 (上部显示、轮播图、下面广告区) -->
+		<section id="carousel" class="clearfix">
+			<div class="top">
+				<a href="#"><img src="./imgs/logo.png" class="fl" alt=""></a>
+				<ul class="mune">
+					<li>
+						<a href="#">小米手机</a>
+						<div class="showed" style="display: none;">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+							<div class="item">
+								<!-- <span class="tip">新品</span> -->
+								<div class="img" style="border-right: 1px solid #e0e0e0;margin-top: 35px;">
+									<img src="./imgs/qingchun-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米8 青春版</span>
+								<span class="price">1499元</span>
+							</div>
+							<div class="item">
+								<!-- <span class="tip">新品</span> -->
+								<div class="img" style="border-right: 1px solid #e0e0e0;margin-top: 35px;">
+									<img src="./imgs/mix3-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米MIX 3</span>
+								<span class="price">3299元</span>
+							</div>
+							<div class="item">
+								<!-- <span class="tip"></span> -->
+								<div class="img" style="border-right: 1px solid #e0e0e0;margin-top: 35px;">
+									<img src="./imgs/pc-320-220-mi8.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米8</span>
+								<span class="price">2599元</span>
+							</div>
+							<div class="item">
+								<!-- <span class="tip">新品</span> -->
+								<div class="img" style="margin-top: 35px;">
+									<img src="./imgs/pc-320-miplay-1.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米 Play</span>
+								<span class="price">1099元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">红米</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">电视</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">笔记本</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">家电</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">新品</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">路由器</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">智能硬件</a>
+						<div class="showed">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img" style="border-right: 1px solid #e0e0e0;">
+									<img src="./imgs/mi9se-320.png" width="160" height="110" alt="">
+								</div>
+								<span class="name">小米9 SE</span>
+								<span class="price">1999元</span>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">社区</a></li>
+				</ul>
+				<div class="search">
+					<form action="">
+						<input type="text" value=""><button><i class="icon-search">&#xe6a8;</i></button>
+					</form>
+					<ul class="inputTip">
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+						<li><a href="#"><span class="left">小米6X</span><span class="right">约有6件</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 中间轮播区域 -->
+			<div class="main clearfix">
+				<div class="left fl">
+					<ul>
+						<li class="publicShow iphoneCar">
+							<a href="#">手机 电话卡</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow tvBox">
+							<a href="#">电视 盒子</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow notebookIpea">
+							<a href="#">笔记本 平板</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow household">
+							<a href="#">家电 插线板</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow goOut">
+							<a href="#">出行 穿戴</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow route">
+							<a href="#">智能路由器</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow elec">
+							<a href="#">电源 配件</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow child">
+							<a href="#">健康 儿童</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow headset">
+							<a href="#">耳机 音响</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="publicShow life">
+							<a href="#">生活 箱包</a>
+							<i class="icon-right fr">&#xe60c;</i>
+							<div>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+									<li>
+										<a href="" class="a">
+											<img src="./minImgs/mi9-80.png" alt="">
+											<span>小米9</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right fl">
+					<span id="prev" class="prev"></span>
+					<span id="next" class="next"></span>
+					<ul class="lunbo">
+						<li class="currentShow" style="opacity: 1;"><img src="./imgs/lunbo1.jpg" width="980" height="470"></li>
+						<li><img src="./imgs/lunbo2.jpg" width="980" height="470"></li>
+						<li><img src="./imgs/lunbo3.jpg" width="980" height="470"></li>
+						<li><img src="./imgs/lunbo4.jpg" width="980" height="470"></li>
+						<li><img src="./imgs/lunbo5.jpg" width="980" height="470"></li>
+					</ul>
+					<!-- 轮播图上右下角小圆圈 -->
+					<ul class="circleIndex">
+						<li>
+							<div class="circleShow"></div>
+						</li>
+						<li>
+							<div></div>
+						</li>
+						<li>
+							<div></div>
+						</li>
+						<li>
+							<div></div>
+						</li>
+						<li>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom-1">
+					<ul class="bottom-1-ul">
+						<li class="borderRight">
+							<a href=""><i class="icon-car">&#xe60c;</i><span>选购手机</span></a>
+						</li>
+						<li class="borderRight">
+							<a href=""><i class="icon-car">&#xe60c;</i><span>企业团购</span></a>
+						</li>
+						<li>
+							<a href=""><i class="icon-car">&#xe60c;</i><span>F码通道</span></a>
+						</li>
+						<li class="borderRight borderTop">
+							<a href=""><i class="icon-car">&#xe60c;</i><span>米粉卡</span></a>
+						</li>
+						<li class="borderRight borderTop">
+							<a href=""><i class="icon-car">&#xe60c;</i><span>以旧换新</span></a>
+						</li>
+						<li class="borderTop">
+							<a href=""><i class="icon-car">&#xe60c;</i><span>话费充值</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom-2"><img src="./imgs/xmad_15553962519926_fcMZl.jpg" width="310" height="170"></div>
+				<div class="bottom-3"><img src="./imgs/xmad_15566163158698_gwoiA.jpg" width="310" height="170"></div>
+				<div class="bottom-4"><img src="./imgs/xmad_15410599445473_Ivjsb.jpg" width="310" height="170"></div>
+			</div>
 		</section>
 
-		<!-- 广告区1 (上不广告、展示区)-->
-		<section id="ad1">
-			广告区1
-		</section>
+		<!-- 独立手机广告 -->
+		<div style="width:1226px;margin: 0 auto 35px;"><img src="./imgs/xmad_15566150564326_nUZAQ.jpg" width="1226" height="120"></div>
+		<section class="bgContainer">
+			<!-- 广告区1 (展示区)-->
+			<section id="ad1" class="public clearfix">
+				<div class="top">
+					<span class="left">手机</span>
+					<span class="right">查看更多<i class="icon-car">&#xe60c;</i></span>
+				</div>
+				<div class="bottomLeft">
+					<a href="#"><img src="./imgs/xmad_15578089659428_Uywcg.jpg" width="235" height="616"></a>
+				</div>
+				<div class="bottomRight">
+					<ul class="showList">
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip" style="background: #E53935;">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip" style="background: #E53935;">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+						<li class="marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt="">
+								</div>
+								<span class="name">小米9</span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<!-- 广告区2 -->
-		<section id="ad2">
-			广告区
-		</section>
+			<!-- 广告区2 -->
+			<section id="ad2" class="public clearfix">
+				<div class="imgAd"><img src="./imgs/xmad_15578284278031_pJLjz.jpg"></div>
+				<div class="top">
+					<span class="left">家电</span>
+					<ul class="right">
+						<li><a href="">热门</a></li>
+						<li><a href="">电视影音</a></li>
+						<li><a href="">电脑</a></li>
+						<li><a href="">家居</a></li>
+					</ul>
+				</div>
+				<div class="bottomLeft">
+					<a href="#"><img src="./imgs/xmad_15021710762698_QXnBu.jpg" width="235" height="616"></a>
+				</div>
+				<div class="bottomRight">
+					<ul class="showList">
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginRight marginBottm animateShow">
+							<div class="item">
+								<span class="tip">新品</span>
+								<div class="img">
+									<a href="#"><img src="./imgs/pms_1550642182.7527088!220x220.jpg" width="160" height="160" alt=""></a>
+								</div>
+								<span class="name"><a href="#">小米9</a></span>
+								<span class="detail">骁龙855，索尼4800万超广角微距三摄</span>
+								<span class="price">2999元</span>
+							</div>
+							<div class="infoTip">
+								<p class="review">发货送货超级快，下单到收到只几个小时，惊呆了。台灯非...</p>
+								<p class="author"> 来自于 416250199 的评价 </p>
+							</div>
+						</li>
+						<li class="marginBottm" style="background: transparent;">
+							<div class="minItem animateShow">
+								<div class="minItem-div1">
+									<a class="minItem-a1" href="#">
+										<p class="ellipsis">小米插线板哈哈哈</p>
+									</a>
+									<p style="margin-top: 7px;color: #F87300;">49元</p>
+								</div>
+								<div class="minItem-div2">
+									<a href="#"><img src="./imgs/pms_1528698828.42759625!220x220.jpg" width="80"></a>
+								</div>
+							</div>
+							<div class="viewMore animateShow">
+								<a href="#" class="viewMore-a">
+									<div class="viewMore-div1">
+										<span class="viewMore-span">浏览更多</p>
+											<p>49元</p>
+									</div>
+									<div class="viewMore-div2">
+										<i class="icon-more">&#xe646;</i>
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<!-- 为你推荐 -->
-		<section id="recommend">
-			为你推荐
-		</section>
+			<!-- 为你推荐 -->
+			<section id="recommend" class="public clearfix">
+				<div class="top">
+					<span class="left">为你推荐</span>
+					<ul class="right">
+						<li style="border: 1px solid #ccc;"><a href="#" style="font-size: 12px; padding: 0 15px;"><i class="icon-car">&#xe60c;</i></a></li>
+						<li style="border: 1px solid #ccc;margin-left: 0;border-left: none;"><a href="#" style="font-size: 12px; padding: 0 15px;"><i
+								 class="icon-car">&#xe60c;</i></a></li>
+					</ul>
+				</div>
+				<div class="bottomRight" style="width: 1226px;height: 300px;">
+					<ul class="showList">
+						<li class="marginRight2 animateShow paddingTop">
+							<div class="item">
+								<div class="img">
+									<a href="#"><img src="./imgs/T1xxVTBghv1RXrhCrK!140x140.jpg" width="140" height="140"></a>
+								</div>
+								<span class="name"><a href="#">彩虹5号电池（10粒装）</a></span>
+								<span class="price">9.9元</span>
+								<span class="detail">17.8万人好评</span>
+							</div>
+						</li>
+						<li class="marginRight2 animateShow paddingTop">
+							<div class="item">
+								<div class="img">
+									<a href="#"><img src="./imgs/T1xxVTBghv1RXrhCrK!140x140.jpg" width="140" height="140"></a>
+								</div>
+								<span class="name"><a href="#">彩虹5号电池（10粒装）</a></span>
+								<span class="price">9.9元</span>
+								<span class="detail">17.8万人好评</span>
+							</div>
+						</li>
+						<li class="marginRight2 animateShow paddingTop">
+							<div class="item">
+								<div class="img">
+									<a href="#"><img src="./imgs/T1xxVTBghv1RXrhCrK!140x140.jpg" width="140" height="140"></a>
+								</div>
+								<span class="name"><a href="#">彩虹5号电池（10粒装）</a></span>
+								<span class="price">9.9元</span>
+								<span class="detail">17.8万人好评</span>
+							</div>
+						</li>
+						<li class="marginRight2 animateShow paddingTop">
+							<div class="item">
+								<div class="img">
+									<a href="#"><img src="./imgs/T1xxVTBghv1RXrhCrK!140x140.jpg" width="140" height="140"></a>
+								</div>
+								<span class="name"><a href="#">彩虹5号电池（10粒装）</a></span>
+								<span class="price">9.9元</span>
+								<span class="detail">17.8万人好评</span>
+							</div>
+						</li>
+						<li class="animateShow paddingTop" style="">
+							<div class="item">
+								<div class="img">
+									<a href="#"><img src="./imgs/T1xxVTBghv1RXrhCrK!140x140.jpg" width="140" height="140"></a>
+								</div>
+								<span class="name"><a href="#">彩虹5号电池（10粒装）</a></span>
+								<span class="price">9.9元</span>
+								<span class="detail">17.8万人好评</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<!-- 热评产品 -->
-		<section id="product">
-			热评产品
-		</section>
+			<!-- 热评产品 -->
+			<section id="product" class="public clearfix">
+				<div class="top">
+					<span class="left">热评产品</span>
+				</div>
+				<div class="bottomRight" style="width: 1226px;height: 410px;">
+					<ul class="showList">
+						<li class="marginRight2">
+							<a href="#"><img src="./imgs/97d80b35-152e-4934-af34-402251458e16.jpg" alt=""></a>
+							<div class="des">
+								<p>非常好用，孩子使用防止沉迷于电话影响学习。做工很好，定位基本准确，通话清晰。
+									如果加入时间显示就更完美...</p>
+								<span>来自于 178576259 的评价</span>
+								<p style="margin: 8px 0 0 5px;"><a href="#" class="name">米兔定位电话</a><span class="price">169元</span></p>
+							</div>
+						</li>
+						<li class="marginRight2">
+							<a href="#"><img src="./imgs/xmad_15094337975564_BSRIq.jpg" alt=""></a>
+							<div class="des">
+								<p>外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。
+									附图，给客服妹子一个大...</p>
+								<span>来自于 酸小妞～！ 的评价</span>
+								<p style="margin: 8px 0 0 5px;"><a href="#" class="name passText">米家车载空气净化器（USB)</a><span class="price">449元</span></p>
+							</div>
+						</li>
+						<li class="marginRight2">
+							<a href="#"><img src="./imgs/54e35fdd-bc68-4a89-bad7-c9c3bb2fc6fe.jpg" alt=""></a>
+							<div class="des">
+								<p>包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！
+									手机控制还是不太熟练，最主要是没有连接...</p>
+								<span>来自于 HZG 的评价</span>
+								<p style="margin: 8px 0 0 5px;"><a href="#" class="name">米家压力IH电饭煲 </a><span class="price">999元</span></p>
+							</div>
+						</li>
+						<li>
+							<a href="#"><img src="./imgs/032d0ff1-f77f-4830-a469-f3564d55e0c5.jpg" alt=""></a>
+							<div class="des">
+								<p>非常可爱，一拿到小宝宝还没享受，一帮大宝宝先high了一把，
+									同事也想买，希望早点大卖</p>
+								<span>来自于 秘密 的评价</span>
+								<p style="margin: 8px 0 0 5px;"><a href="#" class="name">米兔智能故事机</a><span class="price">199元</span></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<!-- 内容区 -->
-		<section id="content">
-			内容区
+			<!-- 内容区 -->
+			<section id="content" class="public clearfix" >
+				<div class="top">
+					<span class="left">内容区</span>
+				</div>
+				<div class="bottomRight" style="width: 1226px;">
+					<ul class="showList">
+						
+					</ul>
+				</div>
+			</section>
 		</section>
 
 		<!-- 视频区 -->
 		<section id="video">
 			视频区
 		</section>
+		</section>
 
 		<!-- 底部区域 -->
-		<footer>
-			底部区域
+		<footer id="footer">
+			<div class="top clearfix">
+				<ul class="clearfix">
+					<li class="borderRight2"><a href=""><i class="icon-about">&#xe629;</i>预约维修服务</a></li>
+					<li class="borderRight2"><a href=""><i class="icon-about">&#xe60e;</i>7天无理由退货</a></li>
+					<li class="borderRight2"><a href=""><i class="icon-about">&#xe606;</i>15天免费换货</a></li>
+					<li class="borderRight2"><a href=""><i class="icon-about" style="font-size: 28px;font-weight: lighter;">&#xe62b;</i>满150元包邮</a></li>
+					<li><a href=""><i class="icon-about">&#xe60f;</i>520余家售后网点</a></li>
+				</ul>
+				<div class="about clearfix">
+					<div class="left">
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>账户管理</dd>
+							<dd>购物指南 </dd>
+							<dd>订单操作</dd>
+						</dl>
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>账户管理</dd>
+							<dd>购物指南 </dd>
+							<dd>订单操作</dd>
+						</dl>
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>账户管理</dd>
+							<dd>购物指南 </dd>
+							<dd>订单操作</dd>
+						</dl>
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>账户管理</dd>
+							<dd>购物指南 </dd>
+							<dd>订单操作</dd>
+						</dl>
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>账户管理</dd>
+							<dd>购物指南 </dd>
+							<dd>订单操作</dd>
+						</dl>
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>账户管理</dd>
+							<dd>购物指南 </dd>
+							<dd>订单操作</dd>
+						</dl>
+					</div>
+					<div class="right">
+						<span class="tel">400-100-5678</span>
+						<span class="time">周一至周日 8:00-18:00</span>
+						<span class="tip">（仅收市话费）</span>
+						<button>联系客服</button>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="clearfix" style="width: 1226px;margin: 0 auto;padding: 25px 0;">
+					<div class="logo fl">
+						<img src="./imgs/logo.png" alt="">
+					</div>
+					<div class="links fl">
+						<ul>
+							<li><a href="#">小米商城</a></li>
+							<li><a href="#">MIUI</a></li>
+							<li><a href="#">米家</a></li>
+							<li><a href="#">米聊</a></li>
+							<li><a href="#">多看</a></li>
+							<li><a href="#">游戏</a></li>
+							<li><a href="#">路由器</a></li>
+							<li><a href="#">米粉卡</a></li>
+							<li><a href="#">政企服务</a></li>
+							<li><a href="#">小米天猫店</a></li>
+							<li><a href="#">隐私政策</a></li>
+							<li><a href="#">商城用户协议</a></li>
+							<li><a href="#">账号协议</a></li>
+							<li><a href="#">问题反馈</a></li>
+							<li><a href="#">廉政举报</a></li>
+							<li><a href="#">诚信合规</a></li>
+							<li><a href="#">Select Region</a></li>
+						</ul>
+						<p>© <a href="#">mi.com</a> 京ICP证110507号 <a href="#">京ICP备10046444号</a> <a href="#">京公网安备11010802020134号</a> <a
+							 href="#">京网文[2017]1530-131号</a> </p>
+						<p><a href="#">（京）网械平台备字（2018）第00005号</a> <a href="#">互联网药品信息服务资格证 (京) -非经营性-2014-0090</a> <a href="#">营业执照
+								医疗器械公告</a> </p>
+						<p><a href="#">增值电信业务许可证</a> 网络食品经营备案（京）【2018】WLSPJYBAHF-12 <a href="#">食品经营许可证</a> </p>
+						<p>违法和不良信息举报电话：185-0130-1238 <a href="#">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+					</div>
+					<div class="fl" style="margin-left: 66px;margin-top: 5px;">
+						<img src="./imgs/truste.png" width="83.02" height="28">
+						<img src="./imgs/v-logo-2.png" width="83.02" height="28">
+						<img src="./imgs/v-logo-1.png" width="83.02" height="28">
+						<img src="./imgs/v-logo-3.png" width="83.02" height="28">
+						<img src="./imgs/ba10428a4f9495ac310fd0b5e0cf8370.png" width="83.02" height="28">
+					</div>
+				</div>
+				<div class="finish">
+					探索黑科技，小米为发烧而生！
+				</div>
+			</div>
+
 		</footer>
+
+		<!-- 侧边栏指示器 -->
+		<section class="pointers">
+			<ul>
+				<li class="noBorderStyle"><a href="#"></a>
+					<div class="erweima">
+						<div class="arrow3" style="position: absolute;left: 128px;top: 13px;"></div>
+						<img src="./imgs/download.png" style="width: 95px;height: 95px;margin-bottom: 18px;">
+						<p>手机扫一扫</p>
+						<p>一分赢好礼</p>
+					</div>
+				</li>
+				<li class="noBorderStyle"><a href="#"></a>
+					<div class="pointTioInfo">
+						<div class="arrow3" style="position: absolute;left: 73px;top: 8px;"></div>
+						个人中心
+					</div>
+				</li>
+				<li class="noBorderStyle"><a href="#"></a>
+					<div class="pointTioInfo">
+						<div class="arrow3" style="position: absolute;left: 73px;top: 8px;"></div>
+						售后服务
+					</div>
+				</li>
+				<li class="noBorderStyle"><a href="#"></a>
+					<div class="pointTioInfo">
+						<div class="arrow3" style="position: absolute;left: 73px;top: 8px;"></div>
+						联系客服
+					</div>
+				</li>
+				<li class=""><a href="#"></a>
+					<div class="pointTioInfo">
+						<div class="arrow3" style="position: absolute;left: 73px;top: 8px;"></div>
+						购物车（0）
+					</div>
+				</li>
+				<!-- 回到顶部 -->
+				<li id="goTop"><a href="#"></a>
+					<div class="pointTioInfo">
+						<div class="arrow3" style="position: absolute;left: 73px;top: 8px;"></div>
+						回到顶部
+					</div>
+				</li>
+
+			</ul>
+		</section>
 
 
 
@@ -148,6 +2030,7 @@
 		<!-- 导入js文件 -->
 		<script src="./lib/jQuery/jquery-1.12.4.js"></script>
 		<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+		<script src="./js/tools.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>

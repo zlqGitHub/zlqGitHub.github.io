@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="shipinbofangyingpian2" unicode="&#59278;" d="M832 768 128 768C57.344 768 0 710.656 0 640l0-576c0-70.656 57.344-128 128-128l704 0c70.656 0 128 57.344 128 128L960 640C960 710.656 902.656 768 832 768zM688.448 324.16l-319.936-191.488c-5.12-3.008-10.816-4.544-16.512-4.544-5.44 0-10.88 1.344-15.744 4.16C326.208 137.92 320 148.544 320 160.064L320 543.04c0 11.52 6.208 22.08 16.256 27.776 9.984 5.696 22.4 5.504 32.256-0.384l319.936-191.488C698.112 373.184 704 362.752 704 351.552 704 340.288 698.112 329.92 688.448 324.16z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

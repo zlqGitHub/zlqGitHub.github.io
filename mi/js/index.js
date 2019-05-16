@@ -42,7 +42,7 @@ $(function(){
 		
 		$(allLi2[i]).on("mouseout",function(){
 			var elem = $(this)[0];
-			$(elem.querySelector("div")).stop().slideUp(10);
+			$(elem.querySelector("div")).stop().slideUp(80);
 		});
 	}
 	
@@ -210,6 +210,57 @@ $(function(){
 		$(window).scrollTop(0);
 	});
 	
+	// 点击内容区中的左右按钮后触发的事件
+	//内容区第一个容器
+	var $container1 = $("#content #ulContainer1 .showList div");
+	var $containerPrev1 = $("#content #ulContainer1 .prev2");
+	var $containerNext1 = $("#content #ulContainer1 .next2");
+	var $containerLis1 = $("#content #ulContainer1 li");
+	
+	// console.log($container1.width());
+	console.log($container1.offset().left);
+	var currentLeft = 0 + "px";
+	// 点击左按钮
+	$containerPrev1.on("click",function(){
+		goLeft($container1,$containerLis1)
+	});
+	// 点击右按钮
+	$containerNext1.on("click",function(){
+		goRight($container1);
+	});
+	
+	
+	//向左移动
+	function goLeft($obj1,$boj2){
+		$obj1.css({
+			position:"absolute",
+			left:currentLeft
+		});
+		if(parseInt($obj1[0].style.left)  == -($boj2.length - 1)*295){
+			//点击失效
+			return;
+		}
+		var toLeft = parseInt($obj1[0].style.left) - 295;
+		console.log(toLeft)
+		move($obj1[0],{left:toLeft});
+		currentLeft = toLeft + "px";
+	}
+	//向右移动
+	function goRight($obj1){
+		$obj1.css({
+			position:"absolute",
+			left:currentLeft
+		});
+		console.log($obj1[0].style.left);
+		if($obj1[0].style.left == "0px"){
+			//点击失效
+			return;
+		}
+		var toLeft = parseInt($obj1[0].style.left) + 295;
+		console.log(toLeft)
+		move($obj1[0],{left:toLeft});
+		currentLeft = toLeft + "px";
+	}
 	
 	
 });

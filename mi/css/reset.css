@@ -55,6 +55,7 @@ a:active {
 	text-decoration: none;
 }
 
+/* clearfix类表示清楚浮动对后面元素造成的影响 */
 .clearfix:after {
 	overflow: hidden;
 	clear: both;
@@ -193,6 +194,51 @@ body {
 	font-family: "about" !important;
 	font-size: 22px;
 	color: #333;
+	font-weight: 100;
+	margin-right: 3px;
+	line-height: 27px;
+	font-weight: lighter;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: list;
+	/* format表示格式 */
+	src: url("../fonts/font_bz20tjcovat/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_bz20tjcovat/iconfont.svg") format("svg"),
+		url("../fonts/font_bz20tjcovat/iconfont.ttf") format("truetype"),
+		url("../fonts/font_bz20tjcovat/iconfont.woff") format("woff");
+}
+
+.icon-list {
+	font-family: "list" !important;
+	font-size: 22px;
+	color: #333;
+	font-weight: 100;
+	margin-right: 3px;
+	line-height: 27px;
+	font-weight: lighter;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+	font-family: video;
+	/* format表示格式 */
+	src: url("../fonts/font_ot4tcfyn8x/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_ot4tcfyn8x/iconfont.svg") format("svg"),
+		url("../fonts/font_ot4tcfyn8x/iconfont.ttf") format("truetype"),
+		url("../fonts/font_ot4tcfyn8x/iconfont.woff") format("woff");
+}
+
+.icon-video {
+	font-family: "video" !important;
+	font-size: 25px;
+	color: #fff;	
 	font-weight: 100;
 	margin-right: 3px;
 	line-height: 27px;

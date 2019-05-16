@@ -165,12 +165,13 @@
 	position: relative;
 }
 #carousel .top .mune .showed .item .tip{
-	height: 18px;
-	line-height: 15px;
-	padding: 1px 15px;
+	height: 22px;
+	line-height: 20px;
+	padding: 0 15px;
 	border: 1px solid #F87300;
 	margin-bottom: 15px;
 	z-index: 10;
+	color: #F87300;
 }
 #carousel .top .mune .showed .item .img{
 	width: 205px;
@@ -487,6 +488,15 @@
 	margin: 0 auto;
 	padding-top: 35px;
 }
+#ad1 .top .right .icon-list{
+	color: #B0B0B0;
+}
+#ad1 .top .right:hover span{
+	color: #F87300;
+}
+#ad1 .top .right:hover .icon-list{
+	color: #F87300;
+}
 .public .top{
 	line-height: 25px;
 	height: 32px;
@@ -681,6 +691,9 @@
 	width: 1226px;
 	margin: 40px auto;
 }
+#recommend .right li:hover i{
+	color: #F87300;
+}
 .marginRight2{
 	margin-right: 14px;
 }
@@ -690,6 +703,7 @@
 .paddingTop span{
 	padding: 5px 0;
 }
+
 /****************** 为你推荐 **********************/
 
 /****************** 热评产品 **********************/
@@ -752,8 +766,133 @@
 	width: 1226px;
 	margin: 30px auto;
 }
+#content .showList{
+	width: 886.5px;
+	height: 418px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	background: #fff;
+	padding-top: 30px;
+	position: relative;
+}
+#content .ulContainer .prev2,#content .ulContainer .next2{
+	width: 20px;
+	height: 45px;
+	z-index: 999;
+	background: #E1E1E1;
+	/* display: none; */
+	color: #fff;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+}
+#content .ulContainer .prev2{
+	position: absolute;
+	top: 180px;
+}
+#content .ulContainer .next2{
+	position: absolute;
+	top: 180px;
+	right: 0;
+}
+#content .ulContainer:hover .prev2,#content .ulContainer:hover .next2{
+	display: block;
+}
+#content .ulContainer .prev2:hover,#content .ulContainer .next2:hover{
+	background: #757575;
+}
+#content .title{
+	color: #F87300;
+	font-size: 16px;
+	width: 295.5px;
+	text-align: center;
+}
+#content .showList li{
+	cursor: pointer;
+	width: 295.5px;
+	height: 370px;
+	text-align: center;
+	padding-top: 25px;
+	box-sizing: border-box;
+	float: left;
+}
+#content .showList li a{
+	text-decoration: none;
+}
+#content .showList li .name a{
+	color: #333;
+	font-size: 20px;
+}
+#content .showList li .des{
+	width: 200px;
+	color: #BDBDBD;
+	margin: 5px auto 10px;
+}
+#content .showList li .price{
+	color: #333;
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+#content .test{
+	width: 295.5px;
+	position: relative !important;
+	top: -418px !important;
+	left: 309.5px;
+	z-index: 10;
+	padding-top: 20px;
+}
 	
 /****************** 内容区 **********************/
+
+/****************** 视频区 **********************/
+#video{
+	width: 1226px;
+	margin: 30px auto;
+}
+#video .showList li{
+	width: 295.5px;
+	height: 285px;
+	text-align: center;
+	position: relative;
+}
+#video .showList li .name{
+	margin-top: 20px;
+}
+#video .showList li .name a{
+	color: #333;
+	font-size: 14px;
+	line-height: 35px;
+	text-decoration: none;
+}
+#video .showList li .name a:hover{
+	color: #F87300;
+}
+#video .showList li .tip{
+	color: #BCBCBC;
+	font-size: 12px;
+}
+#video .showList li .videoControl i{
+	position: absolute;
+	top: 140px;
+	left: 25px;
+	color: #fff;
+}
+#video .showList li .videoControl:hover i{
+	color: #F87300;
+}
+#video .top .right .icon-list{
+	color: #B0B0B0;
+}
+#video .top .right:hover span{
+	color: #F87300;
+}
+#video .top .right:hover .icon-list{
+	color: #F87300;
+}
+
+	
+/****************** 视频区 **********************/
 
 
 /****************** 底部区域 **********************/
@@ -842,7 +981,8 @@
 	height: 30px;
 	border: 1px solid #FF6700;
 }
-#footer .top .about .right button:hover{
+#footer .top .about .right button:hover,
+#footer .top .about .right button:hover i{
 	background: #FF6700;
 	color: #fff;
 }

@@ -13,14 +13,14 @@ $(function(){
 		var allLi = $("#header .tarbar-left li");
 		var $ul = $("#header .tarbar-left");   //ul的宽度
 		var parentW = $ul.parent().width();    //ul父元素的宽度
-		// console.log(allLi);
+		console.log(parentW);
 		var allLiW = 0;    //所有li的宽度
 		for(var i = 0 ; i < allLi.length ; i++){
 			allLiW += $(allLi[0]).width();
 		}
 		if(allLiW > parentW){
 			$ul.css({
-				"width":allLiW+"px",
+				"width":1349+"px",
 				"background":"#333333",
 			});
 		}
@@ -262,5 +262,11 @@ $(function(){
 		currentLeft = toLeft + "px";
 	}
 	
+	// 自动触发网页提示
+	var $webpageTip = $("#webpageTip");
+	console.log($webpageTip[0]);
+	setTimeout(function(){
+		$webpageTip[0].click();
+	},100);
 	
 });

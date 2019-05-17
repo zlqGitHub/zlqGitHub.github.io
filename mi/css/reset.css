@@ -247,3 +247,23 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+
+@font-face {
+	font-family: face;
+	/* format表示格式 */
+	src: url("../fonts/font_obrqj5dhnx8/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_obrqj5dhnx8/iconfont.svg") format("svg"),
+		url("../fonts/font_obrqj5dhnx8/iconfont.ttf") format("truetype"),
+		url("../fonts/font_obrqj5dhnx8/iconfont.woff") format("woff");
+}
+
+.icon-face {
+	font-family: "face" !important;
+	font-size: 25px;	
+	margin-right: 3px;
+	line-height: 27px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

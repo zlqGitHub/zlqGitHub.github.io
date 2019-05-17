@@ -266,6 +266,7 @@ $(function(){
 	var $webpageTip = $("#webpageTip");
 	console.log($webpageTip[0]);
 	setTimeout(function(){
+		console.log("test");
 		$webpageTip[0].click();
 	},100);
 	

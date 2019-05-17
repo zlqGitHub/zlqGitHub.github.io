@@ -51,7 +51,12 @@ $(function(){
 	var $btn = $("#carousel .top .search button");
 	var $inputTip = $("#carousel .top .search .inputTip");
 	// console.log($input);
+	var $span = $("#carousel .top .search form span");
+	console.log($span);
 	$input.on("focusin",function(){
+		for(var i = 0 ; i < $span.length ; i++){
+			$($span[i]).css("display","none");
+		}
 		$(this).css({
 			borderColor:"#FF6700",
 		});
@@ -61,6 +66,9 @@ $(function(){
 		$inputTip.css("display","block");
 	});
 	$input.on("focusout",function(){
+		for(var i = 0 ; i < $span.length ; i++){
+			$($span[i]).css("display","block");
+		}
 		$(this).css({
 			borderColor:"#E0E0E0",
 		});

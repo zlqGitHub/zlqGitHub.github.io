@@ -217,6 +217,13 @@
 	z-index: 10;
 	display: none;
 }
+#carousel .top .search form span{
+	cursor: pointer;
+}
+#carousel .top .search form span:hover{
+	color: #fff !important;
+	background: #F87300 !important;
+}
 #carousel .top .search .inputTip li{
 	height: 33px;
 	line-height: 33px;

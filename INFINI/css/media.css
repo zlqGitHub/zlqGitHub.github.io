@@ -1,0 +1,281 @@
+/*************媒体查询处理***************/
+
+/*************1.头部媒体查询***************/
+@media screen and (min-width:1200px) {
+	#header{
+		width: 100%;
+		height: 100px;
+		padding-top: 15px;
+		box-shadow: 0 5px 5px #9E9E9E;
+		background: #3D3D3D;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#header img{
+		width: 136px;
+		height: 44px;
+		margin-top: 0px;
+	}
+	#header .tarbar li{
+		margin-top: 23px;
+		width: 175px;
+		height: 25px;
+		font-size: 14px;
+		line-height: 25px;
+		float: left;
+		text-align: center;
+	}
+	#header .tarbar li a{
+		color: #A4A4A4;
+		text-decoration: none;
+	}
+	#header .tarbar li a:hover{
+		color: #fff;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+	#header{
+		width: 100%;
+		height: 70px;
+	}
+	#header img{
+		width: 110px;
+		height: 32px;
+		/* margin-top: -8px; */
+	}
+	#header .tarbar li{
+		margin-top: 10px;
+		width: 145px;
+		height: 25px;
+		line-height: 25px;
+	}
+}
+@media screen and (min-width:521px) and (max-width:768px) {
+	#header{
+		width: 100%;
+		height: 70px;
+	}
+	#header img{
+		width: 110px;
+		height: 32px;
+		/* margin-top: 5px; */
+	}
+	#header .tarbar li{
+		margin-top: 12px;
+		width: 125px;
+		height: 20px;
+		line-height: 20px;
+	}
+}
+@media screen and (max-width:521px) {
+	#header{
+		width: 100%;
+		height: 70px;
+	}
+	#header img{
+		width: 110px;
+		height: 32px;
+		/* margin-top: 5px; */
+	}
+	#header .tarbar li{
+		margin-top: 15px;
+		width: 80px;
+		height: 20px;
+		line-height: 20px;
+	}
+	#header .tarbar li a{
+		font-size: 12px;
+	}
+}
+/*************1.头部媒体查询***************/
+
+/*************2.轮播区域接媒体查询***************/
+@media screen and (max-width:920px) {
+	#lunbo{
+		margin-top: 100px;
+	}
+}
+
+/*************2.轮播区域接媒体查询***************/
+
+/*************3.介绍媒体查询***************/
+@media screen and (min-width:772px) and (max-width:1260px) {
+	#des{
+		width: 96%;
+		padding: 15px 0;
+		margin-bottom: 18px;
+		margin-top: -10px;
+	}
+	#des p{
+		line-height: 1.5em;
+		font-size: 1em;
+		margin: 0;
+	}
+}
+@media screen and (min-width:625px) and (max-width:772px) {
+	#des{
+		width: 96%;
+		padding: 13px 0;
+		margin-bottom: 13px;
+		margin-top: -15px;
+	}
+	#des p{
+		line-height: 1.5em;
+		font-size: 1em;
+		margin: 0;
+	}
+}
+@media screen and (max-width:625px) {
+	#des{
+		width: 96%;
+		padding: 6px 0;
+		margin-bottom: 8px;
+		margin-top: -30px;
+	}
+	#des p{
+		line-height: 1.5em;
+		font-size: 0.8em;
+		margin: 0;
+	}
+}
+/*************3.介绍媒体查询***************/
+
+/*************4.超链接媒体查询***************/
+@media screen and (min-width:772px) and (max-width:1260px) {
+	#links{
+		width: 96%;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (min-width:625px) and (max-width:772px) {
+	#links{
+		width: 96%;
+		margin-bottom: 5px;
+	}
+	#links img{
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width:625px) {
+	#links{
+		width: 91%;
+		margin-bottom: 0px;
+	}
+	#links img{
+		margin-top: 5px;
+	}
+
+}
+/*************4.超链接媒体查询***************/
+
+/*************5.内容区媒体查询***************/
+@media screen and (min-width:700px) and (max-width:1260px) {
+	#works{
+		width: 98.5%;
+	}
+}
+@media screen and (min-width:650px) and (max-width:700px) {
+	#works{
+		width: 98.5%;
+	}
+}
+@media screen and (min-width:640px) and (max-width:650px) {
+	#works{
+		width: 98%;
+	}
+}
+@media screen and (min-width:480px) and (max-width:640px) {
+	#works{
+		width: 98%;
+		margin-top: 5px;
+	}
+	#works .item p{
+		line-height: 25px;
+		font-size: 0.6em;
+	}
+	#works .item .mask h1{
+		font-size: 24px;
+		line-height: 45px;
+		margin: 5px 0 2px;
+	}
+	#works .item .mask p{
+		line-height: 25px;
+		font-size: 12px;
+	}
+}
+@media screen and (max-width:480px){
+	#works{
+		width: 96%;
+		margin-top: 5px;
+	}
+	#works .item{
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+	#works .item p{
+		line-height: 25px;
+		font-size: 0.6em;
+	}
+	#works .item .mask h1{
+		font-size: 21px;
+		line-height: 45px;
+		margin: 5px 0 3px;
+	}
+	#works .item .mask p{
+		line-height: 25px;
+		font-size: 12px;
+	}
+	
+}
+/*************5.超链接媒体查询***************/
+
+/*************6.底部区域接媒体查询***************/
+@media screen and (min-width:720px) and (max-width:920px) {
+	#footer .right{
+		padding-left: 15px;
+	}
+}
+@media screen and (min-width:610px) and (max-width:720px) {
+	#footer .right{
+		padding-left: 10px;
+	}
+	#footer .left{
+		padding-right: 15px;
+	}
+}
+@media screen and (min-width:480px) and (max-width:610px) {
+	#footer .right{
+		padding-left: 10px;
+	}
+	#footer .left{
+		padding-right: 15px;
+	}
+	#footer .right p{
+		margin: 2px 0;
+	}
+}
+@media screen and (max-width:480px){
+	#footer .right{
+		padding-left: 5px;
+	}
+	#footer .left{
+		padding-right: 10px;
+	}
+	#footer .left img{
+		width: 26px;
+		height: 23px;
+	}
+	#footer .right p{
+		margin: 2px 0;
+	}
+	#footer .right img{
+		width: 120px;
+		height: 45px;
+		margin-bottom: 8px;
+	}
+	
+}
+/*************6.底部区域接媒体查询***************/

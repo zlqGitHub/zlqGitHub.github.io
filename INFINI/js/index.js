@@ -9,7 +9,7 @@ window.onload = function(){
 		oMasks[i].style.height = oCurrentW + "px";
 	}
 	
-	var changeTo = changeTo;
+	var changeTo;
 	
 	//当前屏幕大小改变是动态设置mask蒙层的高度
 	window.onresize = function(){
@@ -19,11 +19,13 @@ window.onload = function(){
 		}
 
 		//根据页面大小动态处理轮播图的自适应
-		changeTo = parseInt(window.innerWidth * 0.94);
-		// console.log(changeTo)
-		if(window.innerWidth < 1200){
+		changeTo = parseInt(window.outerWidth * 0.94);
+		
+		console.log(window)
+		// if(window.innerWidth < 1200){
+			//获取手机端的屏幕宽度
 			document.querySelector("#lunbo").style.width = changeTo + "px";
-		}
+		// }
 		document.querySelector("#lunbo .lunboContainer").style.width = changeTo + "px";
 		document.querySelector("#lunbo .lunboContainer .imgs").style.width = changeTo * 6 + "px";
 		document.querySelector("#lunbo .lunboContainer .des").style.width = changeTo + "px";
@@ -36,6 +38,8 @@ window.onload = function(){
 		
 	}
 	
+	
+	window.onresize();
 	// 点击切换轮播图
 	var oContainer = document.querySelector(".lunboContainer");
 	var oPrev = document.querySelector(".prev");

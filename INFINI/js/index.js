@@ -10,7 +10,7 @@ window.onload = function(){
 	}
 	
 	var changeTo;
-	
+	console.log(window.visualViewport.width);
 	//当前屏幕大小改变是动态设置mask蒙层的高度
 	window.onresize = function(){
 		oCurrentW = oImg.offsetHeight;
@@ -19,7 +19,7 @@ window.onload = function(){
 		}
 
 		//根据页面大小动态处理轮播图的自适应
-		changeTo = parseInt(window.outerWidth * 0.94);
+		changeTo = parseInt(window.visualViewport.width * 0.94);
 		
 		console.log(window)
 		// if(window.innerWidth < 1200){

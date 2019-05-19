@@ -192,7 +192,7 @@ body {
 
 .icon-about {
 	font-family: "about" !important;
-	font-size: 22px;
+	/* font-size: 22px; */
 	color: #333;
 	font-weight: 100;
 	margin-right: 3px;

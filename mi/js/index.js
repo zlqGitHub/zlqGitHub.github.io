@@ -25,6 +25,7 @@ $(function(){
 			});
 		}
 		else{
+			// js 动态设置的样式，全部在 style 属性中，移除的时候需要注意之前是否设置过style属性
 			$ul.removeAttr("style");
 		}
 	});
@@ -181,7 +182,8 @@ $(function(){
 	// 鼠标移入时div向上运动
 	var $bottomLeft = $(".bottomLeft");   //获取所有广告区域左边栏的图标
 	var $items = $(".animateShow");
-	// console.log($items)
+	var $infoTip = $(".infoTip");
+	// console.log($infoTip)
 	// 左边栏大广告的动画效果
 	for(var i = 0 ; i < $bottomLeft.length ; i++){
 		$bottomLeft.on("mouseover",function(){
@@ -196,9 +198,15 @@ $(function(){
 	for(var i = 0 ; i < $items.length ; i++){
 		$items.on("mouseover",function(){
 			this.style.position = "relative";
+			if(this.querySelector(".infoTip")){
+				move(this.querySelector(".infoTip"),{bottom:0});
+			}
 			move(this,{top:-3});
 		});
 		$items.on("mouseout",function(){
+			if(this.querySelector(".infoTip")){
+				move(this.querySelector(".infoTip"),{bottom:-75});
+			}
 			move(this,{top:0});
 		});
 	}
@@ -207,8 +215,8 @@ $(function(){
 	var $goTop = $("#goTop");
 	// 时刻监听页面的滚动事件，控制回到顶部按钮的显示与隐藏
 	$(window).on("scroll",function(){
-		console.log($(window).scrollTop());
-		if($(window).scrollTop() > 1500){
+		// console.log($(window).scrollTop());
+		if($(window).scrollTop() > 1000){
 			$goTop.css("display","block");
 		}else{
 			$goTop.css("display","none");

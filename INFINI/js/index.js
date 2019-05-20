@@ -101,6 +101,7 @@ window.onload = function(){
 			oLis[currentShow.index].className = "";
 			oLis[oLis.length-3].className = "currentShow";
 			move(oUl[0],{left:-changeTo*3});
+			start();
 			return;
 		}
 		//使用动画效果 
@@ -110,13 +111,12 @@ window.onload = function(){
 		currentShow.className = "";
 		//设置下一个显示的li元素的类
 		oLis[currentShow.index-1].className = "currentShow";
-		timer = setInterval(function(){
-			oNext.onclick();
-		},3000);
+		start();
 
 	}
 	// 下一张
 	oNext.onclick = function(){
+		clearTimeout(timer);
 		currentShow = document.querySelector(".currentShow");
 		
 		//设置des
@@ -149,6 +149,7 @@ window.onload = function(){
 			oLis[currentShow.index].className = "";
 			oLis[1].className = "currentShow";
 			move(oUl[0],{left:-changeTo});
+			start();
 			return;
 		}
 		// oUl[0].style.left = -(currentShow.index+1) * changeTo + "px";
@@ -159,16 +160,16 @@ window.onload = function(){
 		currentShow.className = "";
 		//设置下一个显示的li元素的类
 		oLis[currentShow.index+1].className = "currentShow";
-			
-		// timer = setInterval(function(){
-		// 	oNext.onclick();
-		// },3000);
+		start();
 	}
 	
 	//设置定时器
-	timer = setInterval(function(){
-		oNext.onclick();
-	},3000);
+	function start(){
+		timer = setInterval(function(){
+			oNext.onclick();
+		},3000);
+	}
+	start();
 	
 	//点击小圆圈触发的事件 
 	for(var i = 0 ; i < oCircles.length ; i++){
@@ -191,11 +192,9 @@ window.onload = function(){
 			oPs[this.index].style.display = "block";
 			move(oPs[this.index],{top:0});
 			
-			// setTimeout(function(){
-			// 	timer = setInterval(function(){
-			// 		oNext.onclick();
-			// 	},3000);
-			// },3000);
+			timer = setInterval(function(){
+				oNext.onclick();
+			},3000);
 			
 		}
 	}	

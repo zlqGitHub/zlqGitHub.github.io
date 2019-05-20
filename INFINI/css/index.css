@@ -280,7 +280,17 @@ body{
 	font-size: 12px;
 	
 }
-
-
 /*************6.底部区域***************/
+
+/*************7.加入我们***************/
+#join{
+	width: 37%;
+	height: 400px;
+	padding: 20px;
+	border: 1px solid red;
+	box-sizing: border-box;
+	margin: 130px auto 30px;
+	display: none;
+}
+/*************7.加入我们***************/
 

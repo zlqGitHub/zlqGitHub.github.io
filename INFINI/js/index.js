@@ -10,7 +10,7 @@ window.onload = function(){
 	}
 	
 	var changeTo;
-	console.log(window.visualViewport.width);
+	// console.log(window.visualViewport.width);
 	//当前屏幕大小改变是动态设置mask蒙层的高度
 	window.onresize = function(){
 		oCurrentW = oImg.offsetHeight;
@@ -21,7 +21,7 @@ window.onload = function(){
 		//根据页面大小动态处理轮播图的自适应
 		changeTo = parseInt(window.visualViewport.width * 0.94);
 		
-		console.log(window)
+		// console.log(window)
 		// if(window.innerWidth < 1200){
 			//获取手机端的屏幕宽度
 			document.querySelector("#lunbo").style.width = changeTo + "px";
@@ -32,7 +32,7 @@ window.onload = function(){
 		var changeLis = document.querySelectorAll("#lunbo .lunboContainer .imgs li");
 		for(var i = 0 ; i < changeLis.length ; i++){
 			changeLis[i].style.width = changeTo + "px";
-			console.log(changeLis[i].style.width)
+			// console.log(changeLis[i].style.width)
 		}
 		
 		
@@ -200,4 +200,68 @@ window.onload = function(){
 		}
 	}	
 	
+	//点击导航栏后切换到对应的目录
+	var tarbars = document.querySelectorAll(".tarbar li a");
+	var oHome = document.getElementById("HOME");
+	var oWork = document.getElementById("WORK");
+	var oContanct = document.getElementById("CONTANCT");
+	var oJoin = document.getElementById("JOIN");
+	
+	var show1 = document.getElementById("lunbo");
+	var show2 = document.getElementById("des");
+	var show3 = document.getElementById("links");
+	var show4 = document.getElementById("works");
+	var show5 = document.getElementById("join");
+	var show6 = document.getElementById("footer");
+	
+	var lunboH = document.getElementById("lunbo").offsetTop;
+	var workH = document.getElementById("WORK").scrollHeight;
+
+	var obj = document.documentElement || document.body;
+
+	oHome.onclick = function(){
+		changeA(this);
+		$("html,body").animate({ scrollTop: 0 });
+	}
+	
+	oWork.onclick = function(){
+		console.log(show4.offsetTop)
+		changeA(this);
+		$("html,body").animate({ scrollTop: show4.offsetTop - 90});
+		console.log(show4.offsetTop)
+	}
+	
+	oContanct.onclick = function(){
+		$("html,body").animate({ scrollTop: show6.offsetTop });
+		changeA(this);
+		obj.scrollTop = 2000;
+	}
+	
+	oJoin.onclick = function(){
+		changeA(this);
+		show1.style.display = "none";
+		show2.style.display = "none";
+		show3.style.display = "none";
+		show4.style.display = "none";
+		show5.style.display = "block";
+		$("html,body").animate({ scrollTop: 0});
+		
+	}
+	
+	//动态切换选项栏a的class
+	function changeA(obj){
+		for(var i = 0 ; i < tarbars.length ; i++){
+			tarbars[i].className = "";
+		}
+		obj.className = "active";
+		console.log(obj.id)
+		if(obj.id != "JOIN"){
+			show1.style.display = "block";
+			show2.style.display = "block";
+			show3.style.display = "block";
+			show4.style.display = "block";
+			show5.style.display = "none";
+		}
+	}
+		
 }

@@ -1,0 +1,162 @@
+@import "base.css";
+ul.tab{
+    padding-top: .42rem;
+    width: 100%;
+    height: .22rem;
+    padding-bottom: .31rem;
+    margin-top: .88rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 .39rem .29rem 0 rgba(41, 167, 255, 0.13);
+}
+ul.tab>li{
+    height: 100%;
+}
+ul.tab>li p{
+    font-size: .2rem;
+    line-height: .22rem;
+    font-weight: bold;
+    color: #3bacfe;
+    float: left;
+    margin-right: .15rem;
+}
+#gre{
+    color: #36d681;
+}
+#green{
+    color: #36d681;
+}
+ul.tab>li>.iconfont{
+    float: left;
+    line-height: .15rem;
+    font-size: .15rem;
+}
+ul.content{
+    position: absolute;
+    top: 2.16rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background: #11c2e8;*/
+}
+ul.content>li{
+    margin-top: .68rem;
+    height: 1.74rem;
+    width: 100%;
+    position: relative;
+}
+ul.content>li>.imgbox{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: .35rem;
+    width: 1.74rem;
+    height: 1.74rem;
+}
+ul.content>li>.textbox{
+    height: 1.74rem;
+    margin-left: 2.36rem;
+}
+ul.content>li>.textbox>a.left1{
+    height: .28rem;
+    font-size: .3rem;
+    color: #000000;
+    opacity: 0.6;
+    letter-spacing: .012rem;
+    margin-bottom: .19rem;
+    float: left;
+    font-weight: bold;
+}
+ul.content>li>.textbox>.condition{
+    margin-bottom: .19rem;
+    height: .21rem;
+    width: 100%;
+    float: left;
+}
+ul.content>li>.textbox>.condition>p.sole{
+    font-size: .22rem;
+    color: #999999;
+    padding-left: .12rem;
+    line-height: .28rem;
+    float: left;
+    position: relative;
+    margin-right: .12rem;
+}
+ul.content>li>.textbox>.condition>p.sole:before{
+    content: "";
+    position: absolute;
+    width: .05rem;
+    height:.05rem;
+    top: .13rem;
+    left: .01rem;
+    border-radius: 50%;
+    background-color: #44b5ff;
+    box-shadow: 0 .02rem .05rem 0 rgba(68, 181, 255, 0.43);
+}
+ul.content>li>.textbox>.condition>p.num{
+    padding-right: .53rem;
+    color: #36a8fe;
+    font-size: .26rem;
+    line-height: .26rem;
+    font-weight: bold;
+    float: left;
+}
+ul.content>li>.textbox>.comment{
+    height: .35rem;
+    width: 100%;
+}
+ul.content>li>.textbox>.comment>p{
+    width: 1.21rem;
+    height: .35rem;
+    border-radius: .3rem;
+    background: #e7f6ff;
+    color: #36a8fe;
+    display: block;
+    float: left;
+    margin-right: .09rem;
+    margin-bottom: .27rem;
+    font-size: .2rem;
+    line-height: .35rem;
+    text-align: center;
+}
+ul.content>li>.textbox>.sell{
+    height: .18rem;
+    float: left;
+    width: 100%;
+}
+ul.content>li>.textbox>.sell>p.sole{
+    font-size: .18rem;
+    color: #999999;
+    padding-left: .12rem;
+    line-height: .18rem;
+    float: left;
+    position: relative;
+    margin-right: .07rem;
+}
+ul.content>li>.textbox>.sell>p.sole:before{
+    content: "";
+    position: absolute;
+    width: .05rem;
+    height:.05rem;
+    top: .075rem;
+    left: .01rem;
+    border-radius: 50%;
+    background-color: #36d681;
+    box-shadow: 0px 2px 5px 0px
+    rgba(54, 214, 129, 0.43);
+}
+ul.content>li>.textbox>.sell>p.num{
+    color: #b6b6b6;
+    font-size: .22rem;
+    line-height: .2rem;
+    font-weight: bold;
+    float: left;
+}
+ul.content>li>.textbox>.sell>p.money{
+    color: #fbb548;
+    font-size: .26rem;
+    line-height: .26rem;
+    font-weight: bold;
+    float: right;
+    margin-right: .32rem;
+}

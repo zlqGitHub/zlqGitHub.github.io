@@ -1,0 +1,217 @@
+@import url("base.css");
+.search{
+    width: 7.1rem;
+    height: .60rem;
+    margin:.88rem .2rem .17rem;
+    position: relative;
+}
+.search:after{
+    content: "";
+    background: url(../image/search.png) no-repeat;
+    background-size: .37rem;
+    height: .37rem;
+    width: .37rem;
+    position: absolute;
+    right: .37rem;
+    top: .12rem;
+    margin: auto;
+}
+.search>input{
+    display: block;
+    width: 6.61rem;
+    height: .54rem;
+    /*margin-right: .18rem;*/
+    padding-left: .43rem;
+    float: right;
+    background-color: #ebf7ff;
+    border: solid .03rem rgba(55, 169, 254, 0.17);
+    opacity: 0.58;
+    border-radius: .3rem;
+    margin-bottom: .25rem;
+}
+ul.tab{
+    width: 100%;
+    height: .52rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .22rem;
+}
+ul.tab>li{
+    width: 1.33rem;
+    height: .52rem;
+    border-radius: .3rem;
+    margin: 0 .125rem;
+    background: rgba(59,172,254,0.43);
+    color: #3bacfe;
+    text-align: center;
+    font-size: .2rem;
+    line-height: .52rem;
+    etter-spacing: 0.8px;
+}
+ul.tab>li#now{
+    color: white;
+    background-color: #3bacfe;
+    box-shadow: 0px 5px 12px 0px rgba(59, 172, 254, 0.43);
+}
+.round{
+    width: 7.02rem;
+    height: 3.71rem;
+    background: #a4d3d9;
+    margin:0 .24rem .41rem;
+    overflow: hidden;
+    border-radius: .2rem;
+}
+.hot{
+    width: 6.78rem;
+    height: .32rem;
+    padding:0 .28rem 0 .44rem;
+    /*background: #a4d3d9;*/
+}
+.hot>p.left1{
+    font-size: .32rem;
+    height: 100%;
+    color: #4f5b64;
+    float: left;
+    font-weight: bold;
+    line-height: .32rem;
+    position: relative;
+}
+.hot>p.left1:before{
+    content: "";
+    position: absolute;
+    width: .10rem;
+    height: .05rem;
+    top: .13rem;
+    right: .74rem;
+    background-color: #34da87;
+    box-shadow: 0 .02rem .05rem 0 rgba(52, 218, 135, 0.43);
+}
+.hot>p.left2{
+    font-size: .32rem;
+    height: 100%;
+    color: #34da87;
+    float: left;
+    font-weight: bold;
+    line-height: .32rem;
+}
+.hot>a.right{
+    display: block;
+    font-size: .22rem;
+    height: 100%;
+    color: #3bacfe;
+    float: right;
+}
+ul.goods{
+    overflow: hidden;
+}
+ul.goods>li{
+    margin: .57rem .25rem .15rem;
+    width: 3.25rem;
+    height: 3.86rem;
+    float: left;
+    overflow: hidden;
+}
+ul.goods>li>.imgbox{
+    width: 1.53rem;
+    height: 1.61rem;
+    margin: .15rem 1rem .44rem .72rem;
+    background: #4cd964;
+    display: block;
+}
+ul.goods>li>.goods-title{
+    width: 100%;
+    height: .71rem;
+    border-bottom: solid 1px #e0e0e0;
+    margin-bottom: .16rem;
+}
+ul.goods>li>.goods-title>a.left1{
+    height: .28rem;
+    font-size: .3rem;
+    color: #000000;
+    opacity: 0.4;
+    letter-spacing: .012rem;
+    /*margin-right: .43rem;*/
+    float: left;
+    font-weight: bold;
+}
+ul.goods>li>.goods-title>p.price{
+    font-size: .28rem;
+    color: #fbb548;
+    display: block;
+    float: right;
+    font-weight: bold;
+}
+ul.goods>li>.goods-title>p.num{
+    font-size: .16rem;
+    color: #000000;
+    opacity: 0.5;
+    display: block;
+    float: left;
+    margin-top: .1rem;
+}
+ul.goods>li>.goods-condition{
+    margin-bottom: .2rem;
+    height: .22rem;
+    width: 100%;
+}
+ul.goods>li>.goods-condition>p{
+    line-height: .22rem;
+    position: relative;
+    float: left;
+    font-size: .26rem;
+    color: #36a8fe;
+    font-weight: bold;
+}
+ul.goods>li>.goods-condition>p.sole{
+    font-size: .22rem;
+    color: #999999;
+    padding:0 .1rem 0 .14rem;
+    font-weight: normal;
+}
+ul.goods>li>.goods-condition>p.sole:before{
+    content: "";
+    position: absolute;
+    width: .05rem;
+    height:.05rem;
+    top: .07rem;
+    left: .05rem;
+    border-radius: 50%;
+    background-color: #44b5ff;
+    box-shadow: 0 .02rem .05rem 0 rgba(68, 181, 255, 0.43);
+}
+ul.goods>li>.goods-condition>p.num{
+    padding-right: .6rem;
+}
+ul.goods>li>.goods-comment{
+    width: 100%;
+    height: .35rem;
+}
+ul.goods>li>.goods-comment>p{
+    width: 1.21rem;
+    height: .35rem;
+    border-radius: .3rem;
+    background: #e7f6ff;
+    color: #36a8fe;
+    display: block;
+    float: left;
+    margin-right: .09rem;
+    font-size: .2rem;
+    line-height: .35rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#gap{
+   height: .98rem;
+    width: 100%;
+}

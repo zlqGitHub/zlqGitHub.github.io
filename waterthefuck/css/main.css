@@ -1,0 +1,93 @@
+@import "base.css";
+.search{
+    width: 100%;
+    height: .60rem;
+    /*background: #11c2e8;*/
+    margin-bottom: .17rem;
+    position: relative;
+    margin-top: .88rem;
+}
+.search>.iconfont{
+    float: left;
+    line-height: .6rem;
+    font-size: .20rem;
+    color:#36a8fe;
+}
+.search>.local{
+    height: .60rem;
+    margin-left: .22rem;
+    margin-right: .04rem;
+    padding: .16rem 0;
+    font-size: .28rem;
+    float: left;
+    letter-spacing: 1.1px;
+    color: #36a8fe;
+    white-space: nowrap;
+}
+.search:after{
+    content: "";
+    background: url(../image/search.png) no-repeat;
+    background-size: .37rem;
+    height: .37rem;
+    width: .37rem;
+    position: absolute;
+    right: .37rem;
+    top: .12rem;
+    margin: auto;
+}
+.search>input{
+    display: block;
+    width: 5.5rem;
+    height: .54rem;
+    margin-right: .18rem;
+    padding-left: .43rem;
+    float: right;
+    background-color: #ebf7ff;
+    border: solid .03rem rgba(55, 169, 254, 0.17);
+    opacity: 0.58;
+    border-radius: .3rem;
+}
+.round{
+    width: 100%;
+    height: 3.07rem;
+    background: #a4d3d9;
+    margin-bottom: .4rem;
+    overflow: hidden;
+}
+ul.tab{
+    overflow: hidden;
+}
+ul.tab>li.minibox{
+    width: 1.13rem;
+    /*暂时*/
+    height: 1.66rem;
+    /*暂时*/
+    float: left;
+    margin: .06rem .63rem .52rem;
+    /*background: #4cd964;*/
+}
+ul.tab>li.minibox>a.imgbox{
+    display: block;
+    width: 1.13rem;
+    height: 1.13rem;
+    border-radius: 50%;
+    margin-bottom: .30rem;
+    background: #a4d3d9;
+    box-shadow: 0 .2rem .2rem #61e8fa4a;
+}
+ul.tab>li.minibox>p{
+    width: 1.13rem;
+    height: .23rem;
+    /*background: #11c2e8;*/
+    text-align: center;
+    font-size: .24rem;
+    color: #8e9397;
+    white-space: nowrap;
+}
+ul.tab>li.gap{
+    width: .165rem;
+    height: 1.66rem;
+    float: left;
+    /*background: #11c2e8;*/
+}
+

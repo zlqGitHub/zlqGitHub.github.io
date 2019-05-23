@@ -58,83 +58,72 @@ body{
 /*************1.头部导航***************/
 
 /*************2.轮播区域***************/
-#lunbo{
-	width: 1200px;
-	margin: 130px auto 25px;
+.contianer{
+	width: 90%;
+	margin: 130px auto 15px;
 	position: relative;
 	overflow: hidden;
 }
-#lunbo .lunboContainer{
-	width: 1200px;
+.contianer ul{
+	width:500%;
+	padding: 0;
+	margin:0;
 	position: relative;
-	overflow: hidden;
 }
-#lunbo .lunboContainer .des{
+.contianer ul li{
+	list-style: none;
+	float: left;
+	width: 20%;
+}
+.contianer ul li img{
 	width: 100%;
-	height: 35px;
-	text-align: center;
-	background: rgba(0,0,0,0.5);
+	vertical-align: middle;
+}
+.contianer .des{
+	width: 100%;
 	position: absolute;
 	bottom: 0;
-	font-size: 16px;
-	color: #E8E6E0;
+	background: rgba(0,0,0,0.5);
 }
-#lunbo .lunboContainer .des p{
+.contianer .des p{
+	padding: 5px 0;
 	margin: 0;
-	display: none;
-	line-height: 35px;
-	position: relative;
+	color: #fff;
+	text-align: center;
+	position: relative !important;
 	top: 25px;
+	display: none;
 }
-#lunbo .circles{
-	width: 100%;
-	height: 40px;
-	margin: 0 auto;
+.circles{
+	width: 90%;
+	margin: 0px auto;
 	display: flex;
 	justify-content: center;
 }
-#lunbo .circles div{
+.circles div{
 	width: 7px;
 	height: 7px;
+	padding: 2px;
+	margin: 0 15px;
+	background: #999;
 	float: left;
-	background: #999999;
-	margin: 15px 20px;
 	border-radius: 50%;
-	cursor: pointer;
+	box-sizing: border-box;
 }
-#lunbo .lunboContainer .imgs{
-	width: 7200px;
-	margin: 0;
-	position: relative;
+.prev,.next{
+	width: 15px;
+	height: 40px;
+	background: red;
 }
-#lunbo .lunboContainer .imgs li{
-	width: 1200px;
-	float: left;
-}
-#lunbo .imgs img{
-	width: 100%;
-}
-
-#lunbo .prev{
-	width: 17px;
-	height: 54px;
-	cursor: pointer;
-	background: url(../source/imgs/left.png) no-repeat;
-	background-size: 17px 54px;
+.prev{
 	position: absolute;
 	top: 40%;
-	left: 20px;
-	z-index: 333;
+	left: 15px;
 }
-#lunbo .next{
-	width: 17px;
-	height: 54px;
-	cursor: pointer;
-	background: url(../source/imgs/right.png) no-repeat;
-	background-size: 17px 54px;
+.next{
 	position: absolute;
 	top: 40%;
-	right: 20px;
+	right: 15px;
 }
 
 /*************2.轮播区域***************/
@@ -143,7 +132,7 @@ body{
 #des{
 	width: 1200px;
 	padding: 18px 0;
-	margin: 0px auto 25px;
+	margin: 20px auto 25px;
 	font-family: huawen;
 	font-size: 16px;
 	text-indent: 2em;

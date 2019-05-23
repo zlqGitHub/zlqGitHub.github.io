@@ -8,197 +8,7 @@ window.onload = function(){
 	for(var i = 0 ; i < oMasks.length ; i++){
 		oMasks[i].style.height = oCurrentW + "px";
 	}
-	
-	var changeTo;
-	// console.log(window.visualViewport.width);
-	//当前屏幕大小改变是动态设置mask蒙层的高度
-	window.onresize = function(){
-		oCurrentW = oImg.offsetHeight;
-		for(var i = 0 ; i < oMasks.length ; i++){
-			oMasks[i].style.height = oCurrentW + "px";
-		}
 
-		//根据页面大小动态处理轮播图的自适应
-		changeTo = parseInt(window.visualViewport.width * 0.94);
-		
-		// console.log(window)
-		// if(window.innerWidth < 1200){
-			//获取手机端的屏幕宽度
-			document.querySelector("#lunbo").style.width = changeTo + "px";
-		// }
-		document.querySelector("#lunbo .lunboContainer").style.width = changeTo + "px";
-		document.querySelector("#lunbo .lunboContainer .imgs").style.width = changeTo * 6 + "px";
-		document.querySelector("#lunbo .lunboContainer .des").style.width = changeTo + "px";
-		var changeLis = document.querySelectorAll("#lunbo .lunboContainer .imgs li");
-		for(var i = 0 ; i < changeLis.length ; i++){
-			changeLis[i].style.width = changeTo + "px";
-			// console.log(changeLis[i].style.width)
-		}
-		
-		
-	}
-	
-	
-	window.onresize();
-	// 点击切换轮播图
-	var oContainer = document.querySelector(".lunboContainer");
-	var oPrev = document.querySelector(".prev");
-	var oNext = document.querySelector(".next");
-	var oUl = document.querySelectorAll(".imgs");
-	var oLis = document.querySelectorAll(".imgs li");
-	var oPs = document.querySelectorAll(".des p");
-	var oCircles = document.querySelectorAll(".circles div");
-	var currentShow;
-	for(var i = 0 ; i < oCircles.length ; i++){
-		oCircles[i].index = i;
-	}
-	for(var i = 0 ; i < oLis.length ; i++){
-		oLis[i].index = i;
-	}
-	oUl[0].style.left = -changeTo + "px";   //默认显示第二张图片
-	// console.log(oUl);
-	// 上一张
-	oPrev.onclick = function(){
-		clearTimeout(timer);
-		currentShow = document.querySelector(".currentShow");
-		//设置des
-		console.log(currentShow.index);
-		for(var i = 0 ; i < oPs.length ; i++){
-			oPs[i].style.top = 25 + "px";
-			oPs[i].style.display = "none";
-			oCircles[i].style.background = "#999999";
-			oCircles[i].style.border = "";
-			oCircles[i].style.padding = "";
-			if(currentShow.index == 2){
-				oCircles[0].style.background = "transparent";
-				oCircles[0].style.border = "1px solid #9C9C9C";
-				oCircles[0].style.padding = "3px";
-				oPs[0].style.display = "block";
-				move(oPs[0],{top:0});
-			}else if(currentShow.index == 1){
-				oCircles[3].style.background = "transparent";
-				oCircles[3].style.border = "1px solid #9C9C9C";
-				oCircles[3].style.padding = "3px";
-				oPs[3].style.display = "block";
-				move(oPs[3],{top:0});
-			}else if(currentShow.index == 0){
-				oCircles[2].style.background = "transparent";
-				oCircles[2].style.border = "1px solid #9C9C9C";
-				oCircles[2].style.padding = "3px";
-				oPs[2].style.display = "block";
-				move(oPs[2],{top:0});
-			}else{
-				oCircles[1].style.background = "transparent";
-				oCircles[1].style.border = "1px solid #9C9C9C";
-				oCircles[1].style.padding = "3px";
-				oPs[1].style.display = "block";
-				move(oPs[1],{top:0});
-			}		
-		}		
-		
-		if(currentShow.index == 0){
-			oUl[0].style.left = -changeTo * (oLis.length-2) + "px";
-			oLis[currentShow.index].className = "";
-			oLis[oLis.length-3].className = "currentShow";
-			move(oUl[0],{left:-changeTo*3});
-			start();
-			return;
-		}
-		//使用动画效果 
-		move(oUl[0],{left:-(currentShow.index-1) * changeTo})
-		//切换类
-		//清空前一次显示的li元素的类
-		currentShow.className = "";
-		//设置下一个显示的li元素的类
-		oLis[currentShow.index-1].className = "currentShow";
-		start();
-
-	}
-	// 下一张
-	oNext.onclick = function(){
-		clearTimeout(timer);
-		currentShow = document.querySelector(".currentShow");
-		
-		//设置des
-		// console.log(currentShow.index);
-		for(var i = 0 ; i < oPs.length ; i++){
-			oPs[i].style.top = 25 + "px";
-			oPs[i].style.display = "none";
-			oCircles[i].style.background = "#999999";
-			oCircles[i].style.border = "";
-			oCircles[i].style.padding = "";
-			if(i == currentShow.index){
-				oCircles[i].style.background = "transparent";
-				oCircles[i].style.border = "1px solid #9C9C9C";
-				oCircles[i].style.padding = "3px";
-				oPs[i].style.display = "block";
-				// oPs[i].style.top = 0 + "px";
-				move(oPs[i],{top:0});
-			}else if(currentShow.index == 4){
-				oCircles[0].style.background = "transparent";
-				oCircles[0].style.border = "1px solid #9C9C9C";
-				oCircles[0].style.padding = "3px";
-				oPs[0].style.display = "block";
-				move(oPs[0],{top:0});
-			}		
-		}
-		
-		//到最后一张图片的时候
-		if(currentShow.index == oLis.length - 2){
-			oUl[0].style.left = 0 + "px";
-			oLis[currentShow.index].className = "";
-			oLis[1].className = "currentShow";
-			move(oUl[0],{left:-changeTo});
-			start();
-			return;
-		}
-		// oUl[0].style.left = -(currentShow.index+1) * changeTo + "px";
-		//使用动画效果 
-		move(oUl[0],{left:-(currentShow.index+1) * changeTo})
-		//切换类
-		//清空前一次显示的li元素的类
-		currentShow.className = "";
-		//设置下一个显示的li元素的类
-		oLis[currentShow.index+1].className = "currentShow";
-		start();
-	}
-	
-	//设置定时器
-	function start(){
-		timer = setInterval(function(){
-			oNext.onclick();
-		},3000);
-	}
-	start();
-	
-	//点击小圆圈触发的事件 
-	for(var i = 0 ; i < oCircles.length ; i++){
-		oCircles[i].onclick = function(){
-			clearTimeout(timer);
-			currentShow = document.querySelector(".currentShow");
-			move(oUl[0],{left:-changeTo*(this.index+1)});
-			oLis[currentShow.index].style.className = "";
-			oLis[this.index].style.className = "currentShow";
-			for(var i = 0 ; i < oCircles.length ; i++){
-				oPs[i].style.top = 25 + "px";
-				oPs[i].style.display = "none";
-				oCircles[i].style.background = "#999999";
-				oCircles[i].style.border = "";
-				oCircles[i].style.padding = "";
-			}
-			oCircles[this.index].style.background = "transparent";
-			oCircles[this.index].style.border = "1px solid #9C9C9C";
-			oCircles[this.index].style.padding = "3px";
-			oPs[this.index].style.display = "block";
-			move(oPs[this.index],{top:0});
-			
-			timer = setInterval(function(){
-				oNext.onclick();
-			},3000);
-			
-		}
-	}	
-	
 	//点击导航栏后切换到对应的目录
 	var tarbars = document.querySelectorAll(".tarbar li a");
 	var oHome = document.getElementById("HOME");
@@ -262,5 +72,154 @@ window.onload = function(){
 			show5.style.display = "none";
 		}
 	}
+	
+	
+	
+	//获取所有的li元素及其父元素ul
+	var contianer = document.querySelector(".contianer ul");
+	var lis = document.querySelectorAll(".contianer ul li");
+	//获取所有的des中的p元素
+	var ps = document.querySelectorAll(".des p");
+	//获取轮播图对应的小圆圈div
+	var divs = document.querySelectorAll(".circles div");
+	
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].index = i;
+	}
+	for (var i = 0; i < ps.length; i++) {
+		ps[i].index = i;
+		divs[i].index = i;
+	}
+	
+	//获取左右按钮
+	var prev = document.querySelector(".prev");
+	var next = document.querySelector(".next");
+	var currentShow;
+	next.onclick = function() {
+		clearTimeout(timer);
+		currentShow = document.querySelector(".show");
+		currentShow.className = ""; //将其类清空
+		//切换对应的des
+		clearStyle(ps,divs);   //清楚默认样式
+		if (currentShow.index == lis.length - 1) {
+			contianer.style.left = 0 + "px";
+			lis[1].className = "show";
+			ps[0].style.display = "block";
+			divs[0].style.border = "2px solid #999";
+			divs[0].style.background = "transparent";
+			// contianer.style.left = -lis[0].offsetWidth + "px";
+			move(contianer, {
+				left: -lis[0].offsetWidth
+			})
+			move(ps[0],{top:0});
+			start();
+			return;
+		}
+		lis[currentShow.index + 1].className = "show";
+		// console.log(currentShow.index)
+		ps[currentShow.index].style.display = "block";
+		divs[currentShow.index].style.border = "2px solid #999";
+		divs[currentShow.index].style.background = "transparent";
+		// contianer.style.left = -lis[0].offsetWidth * (currentShow.index+1) + "px";
+		move(contianer, {
+			left: -lis[0].offsetWidth * (currentShow.index + 1)
+		})
+		move(ps[currentShow.index],{top:0});
+		start();
+	
+	}
+	prev.onclick = function() {
+		clearTimeout(timer);
+		currentShow = document.querySelector(".show");
+		currentShow.className = ""; //将其类清空
+		//切换对应的des
+		clearStyle(ps,divs);   //清楚默认样式
+		if (currentShow.index == 0) {
+			contianer.style.left = -lis[0].offsetWidth * (lis.length - 1) + "px";
+			lis[lis.length - 2].className = "show";
+			ps[lis.length-3].style.display = "block";
+			divs[lis.length-3].style.border = "2px solid #999";
+			divs[lis.length-3].style.background = "transparent";
+			// contianer.style.left = -lis[0].offsetWidth + "px";
+			move(contianer, {
+				left: -lis[0].offsetWidth * (lis.length - 2)
+			})
+			move(ps[lis.length-3],{top:0});
+			start();
+			return;
+		}
+		if (currentShow.index == 1){
+			ps[lis.length-2].style.display = "block";
+			divs[lis.length-2].style.border = "2px solid #999";
+			divs[lis.length-2].style.background = "transparent";
+			move(ps[lis.length-2],{top:0});
+		}else{
+			ps[currentShow.index-2].style.display = "block";
+			divs[currentShow.index-2].style.border = "2px solid #999";
+			divs[currentShow.index-2].style.background = "transparent";
+			move(ps[currentShow.index-2],{top:0});
+		}
+		
+		lis[currentShow.index - 1].className = "show";
+		console.log(currentShow.index)
+		// contianer.style.left = -lis[0].offsetWidth * (currentShow.index+1) + "px";
+		move(contianer, {
+			left: -lis[0].offsetWidth * (currentShow.index - 1)
+		})
+		start();
+	}
+	
+	//清楚默认的样式
+	function clearStyle(obj1,obj2){
+		for(var i = 0 ; i < obj1.length ; i++){
+			obj1[i].style.display = "none";
+			obj1[i].style.top = "25px";
+			obj2[i].style.border = "none";
+			obj2[i].style.background = "#999";
+		}
+	}
+	
+	//设置定时器让轮播图自动播放
+	function start(){
+		timer = setInterval(res => {
+			next.onclick();
+		}, 2000)
+	}
+	start();
+	
+	//点击小圆圈触发的事件
+	for(var i = 0 ; i < divs.length ; i++){
+		divs[i].onclick = function(){
+			//先清空定时器
+			clearTimeout(timer);
+			clearStyle(ps,divs);   //清空默认样式
+			currentShow = document.querySelector(".show");
+			currentShow.className = "";   //将当前显示元素的类去掉
+			lis[this.index+1].className = "show";   //给点击后对应索引的元素添加
+			move(contianer,{left:-lis[0].offsetWidth * (this.index + 1)})
+			console.log(this.index);
+			//设置当前小圆圈的样式
+			this.style.border = "2px solid #999";
+			this.style.background = "transparent";
+			//设置对应的des描述
+			ps[this.index].style.display = "block";
+			move(ps[this.index],{top:0});
+			
+			//重新启动定时器
+			start();
+		}
+	}
+	
+	//当前屏幕大小改变是动态设置mask蒙层的高度
+	window.onresize = function(){
+		oCurrentW = oImg.offsetHeight;
+		for(var i = 0 ; i < oMasks.length ; i++){
+			oMasks[i].style.height = oCurrentW + "px";
+		}
+	
+		//页面加载时将container的offsetLeft向左移动一张图片大小
+		contianer.style.left = -lis[0].offsetWidth + "px";
+	}
+	window.onresize();
 		
 }

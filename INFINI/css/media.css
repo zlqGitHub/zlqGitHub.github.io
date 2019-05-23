@@ -92,9 +92,14 @@
 /*************1.头部媒体查询***************/
 
 /*************2.轮播区域接媒体查询***************/
-@media screen and (max-width:920px) {
-	#lunbo{
+@media screen and (max-width:1200px){
+	.contianer{
 		margin-top: 100px;
+	}
+}
+@media screen and (max-width:768px) {
+	.contianer{
+		margin-top: 90px;
 	}
 }
 
@@ -106,7 +111,7 @@
 		width: 96%;
 		padding: 15px 0;
 		margin-bottom: 18px;
-		margin-top: -10px;
+		margin-top: 20px;
 	}
 	#des p{
 		line-height: 1.5em;
@@ -119,7 +124,7 @@
 		width: 96%;
 		padding: 13px 0;
 		margin-bottom: 13px;
-		margin-top: -15px;
+		margin-top: 15px;
 	}
 	#des p{
 		line-height: 1.5em;
@@ -132,7 +137,7 @@
 		width: 96%;
 		padding: 6px 0;
 		margin-bottom: 8px;
-		margin-top: -30px;
+		margin-top: 10px;
 	}
 	#des p{
 		line-height: 1.5em;

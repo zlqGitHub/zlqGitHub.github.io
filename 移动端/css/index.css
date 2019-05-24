@@ -1,0 +1,103 @@
+/*************公用样式**************/
+html{
+	font-size: 50px;
+}
+/*************公用样式**************/
+
+/*************顶部区域**************/
+#top{
+	display: -webkit-flex;
+	display: flex;
+	padding: 0.15rem 0.1rem;
+}
+#top section{
+	flex: 1;
+}
+#top .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.36rem;
+}
+#top .wx{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+/*************顶部区域**************/
+
+/*************头部区域**************/
+#header{
+	width: 100%;
+}
+#header a img{
+	width: 100%;
+}
+/*************头部区域**************/
+
+/*************广告区域**************/
+#ad{
+	width: 88%;
+	margin: 0.65rem auto 0px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+#ad a img{
+	width: 100%;
+	margin: 0;
+}
+#ad img{
+	width: 60%;
+	margin: 0.5rem 0;
+}
+#ad .huangguan{
+	position: absolute;
+	width: 0.52rem;
+	height: 0.46rem;
+	top: -0.7rem;
+	right: 0.01rem;
+}
+/*************广告区域**************/
+
+/*************内容区域**************/
+#contents{
+	width: 88%;
+	margin: 0.1rem auto;
+	text-align: center;
+}
+#contents a img{
+	width: 100%;
+	margin-bottom: 0.33rem;
+}
+/*************内容区域**************/
+
+/*************底部区域**************/
+#footer{
+	width: 92%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}
+#footer a{
+	color: #666;
+	font-size: 0.35rem;
+	line-height: 0.35rem;
+	text-decoration: none;
+	cursor: pointer;
+}
+#footer section{
+	flex: 1;
+	margin-bottom: 0.8rem;
+	display: flex;
+	justify-content: center;
+}
+#footer .left{
+	border-right: 1px solid #666;
+}
+/*************底部区域**************/

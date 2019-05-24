@@ -1,0 +1,269 @@
+html,
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+em,
+textarea,
+p,
+th,
+td {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*
+去除图片底部间隙
+*/
+img {
+	vertical-align: middle;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+/* clearfix类表示清楚浮动对后面元素造成的影响 */
+.clearfix:after {
+	overflow: hidden;
+	clear: both;
+	display: block;
+	height: 0;
+	content: "\20"
+}
+
+/*它就是空格，*/
+.clearfix {
+	*zoom: 1;
+}
+
+.clear {
+	clear: both;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.ellipsis {
+	/* 文本末尾省略号 */
+	/* 规定是否换行 */
+	white-space: nowrap;
+	/* 超出隐藏 */
+	overflow: hidden;
+	/* 超出部分用省略号代替 */
+	text-overflow: ellipsis;
+}
+
+body {
+	/* 12px/1.5指字体大小12px，1.5倍的行高 */
+	font: 12px/1.5 '微软雅黑', '宋体', STHeiTi, Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+/* 字体图标的使用 */
+@font-face {
+	font-family: car;
+	/* format表示格式 */
+	src: url("../fonts/font_hc9zlroh18j/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_hc9zlroh18j/iconfont.svg") format("svg"),
+		url("../fonts/font_hc9zlroh18j/iconfont.ttf") format("truetype"),
+		url("../fonts/font_hc9zlroh18j/iconfont.woff") format("woff");
+}
+
+.icon-car {
+	font-family: "car" !important;
+	font-size: 15px;
+	font-weight: 600;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: search;
+	/* format表示格式 */
+	src: url("../fonts/font_lqkrmif3ftj/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_lqkrmif3ftj/iconfont.svg") format("svg"),
+		url("../fonts/font_lqkrmif3ftj/iconfont.ttf") format("truetype"),
+		url("../fonts/font_lqkrmif3ftj/iconfont.woff") format("woff");
+}
+
+.icon-search {
+	font-family: "search" !important;
+	font-size: 15px;
+	font-weight: 600;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: right;
+	/* format表示格式 */
+	src: url("../fonts/font_r6jpbcn61m/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_r6jpbcn61m/iconfont.svg") format("svg"),
+		url("../fonts/font_r6jpbcn61m/iconfont.ttf") format("truetype"),
+		url("../fonts/font_r6jpbcn61m/iconfont.woff") format("woff");
+}
+
+.icon-right {
+	font-family: "right" !important;
+	font-size: 15px;
+	font-weight: 600;
+	color: #BDBDBD;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: more;
+	/* format表示格式 */
+	src: url("../fonts/font_k8ej86s5wua/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_k8ej86s5wua/iconfont.svg") format("svg"),
+		url("../fonts/font_k8ej86s5wua/iconfont.ttf") format("truetype"),
+		url("../fonts/font_k8ej86s5wua/iconfont.woff") format("woff");
+}
+
+.icon-more {
+	font-family: "more" !important;
+	font-size: 45px;
+	color: #F87300;
+	font-weight: 600;
+	font-weight: lighter;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: about;
+	/* format表示格式 */
+	src: url("../fonts/font_ky0070glo99/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_ky0070glo99/iconfont.svg") format("svg"),
+		url("../fonts/font_ky0070glo99/iconfont.ttf") format("truetype"),
+		url("../fonts/font_ky0070glo99/iconfont.woff") format("woff");
+}
+
+.icon-about {
+	font-family: "about" !important;
+	/* font-size: 22px; */
+	color: #333;
+	font-weight: 100;
+	margin-right: 3px;
+	line-height: 27px;
+	font-weight: lighter;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: list;
+	/* format表示格式 */
+	src: url("../fonts/font_bz20tjcovat/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_bz20tjcovat/iconfont.svg") format("svg"),
+		url("../fonts/font_bz20tjcovat/iconfont.ttf") format("truetype"),
+		url("../fonts/font_bz20tjcovat/iconfont.woff") format("woff");
+}
+
+.icon-list {
+	font-family: "list" !important;
+	font-size: 22px;
+	color: #333;
+	font-weight: 100;
+	margin-right: 3px;
+	line-height: 27px;
+	font-weight: lighter;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+	font-family: video;
+	/* format表示格式 */
+	src: url("../fonts/font_ot4tcfyn8x/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_ot4tcfyn8x/iconfont.svg") format("svg"),
+		url("../fonts/font_ot4tcfyn8x/iconfont.ttf") format("truetype"),
+		url("../fonts/font_ot4tcfyn8x/iconfont.woff") format("woff");
+}
+
+.icon-video {
+	font-family: "video" !important;
+	font-size: 25px;
+	color: #fff;	
+	font-weight: 100;
+	margin-right: 3px;
+	line-height: 27px;
+	font-weight: lighter;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+	font-family: face;
+	/* format表示格式 */
+	src: url("../fonts/font_obrqj5dhnx8/iconfont.eot") format("embedded-opentype"),
+		url("../fonts/font_obrqj5dhnx8/iconfont.svg") format("svg"),
+		url("../fonts/font_obrqj5dhnx8/iconfont.ttf") format("truetype"),
+		url("../fonts/font_obrqj5dhnx8/iconfont.woff") format("woff");
+}
+
+.icon-face {
+	font-family: "face" !important;
+	font-size: 25px;	
+	margin-right: 3px;
+	line-height: 27px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

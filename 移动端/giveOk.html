@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>赠送成功</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<style type="text/css">
+			.tip{
+				width: 92%;
+				height: 5rem;
+				margin: 0.2rem auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.tip img{
+				width: 2rem;
+				width: 2rem;
+			}
+			.tip span{
+				font-size: 0.4rem;
+				margin-top: 0.4rem;
+				font-weight: 600;
+			}
+			.tip2{
+				width: 92%;
+				margin: 0.65rem auto 0;
+				box-sizing: border-box;
+				padding: 0 0.2rem;
+				font-size: 0.26rem;
+				color: #B5B5B5;
+				text-align: center;
+			}
+			.btn {
+				display: block;
+				width: 92%;
+				text-align: center;
+				background: #09BB07;
+				color: #DBF4DB;
+				border: 0;
+				padding: 0.2rem 0;
+				border-radius: 5px;
+				margin: 0.25rem auto;
+				font-size: 0.36rem;
+				letter-spacing: 0.1rem;
+			}
+			.footer{
+				width: 92%;
+				position: absolute;
+				bottom: 0.5rem;
+				display: flex;
+				justify-content: space-around;
+			}
+			.footer a{
+				text-decoration: none;
+				color: #7685A5;
+				font-size: 0.26rem;
+				line-height: 0.26rem;
+			}
+			.footer span:nth-child(1){
+				flex: 1;
+				display: flex;
+				justify-content: flex-end;
+				border-right: 1px solid #7685A5;
+				padding-right: 0.5rem;
+			}
+			.footer span:nth-child(2){
+				flex: 1;
+				display: flex;
+				justify-content: flex-start;	
+				padding-left: 0.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 顶部区域 -->
+		<section id="top">
+			<section class="back"><a href="./give.html" style="font-weight: 900;"><i style="font-family: iconfont;">&#xe601;</i></a></section>
+			<section class="title">送出已领完</section>
+			<section class="wx"><img src="./imgs/wx.png" width="75%"></section>
+		</section>
+		
+		<section class="tip">
+			<img src="./imgs/ok.png" alt="">
+			<span>赠送成功</span>
+		</section>
+		
+		<p class="tip2">您可以在“我赠送的”查看好友获得的商品，物品在好友填写后货信息后1个工作日内发出</p>
+		
+		<a href="./index.html" style="text-decoration: none;"><button class="btn" >完成</button></a>
+		
+		<section class="footer">
+			<span><a href="./get.html">我收到的</a></span>
+			<span><a href="./give">我赠送的</a></span>
+		</section>
+	</body>
+</html>

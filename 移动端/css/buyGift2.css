@@ -1,0 +1,188 @@
+/************头部区域**************/
+.header{
+	width: 88%;
+	margin: 0.3rem auto;
+}
+.header .top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .top .lihe{
+	font-size: 0.28rem;
+	color: #333;
+	display: flex;
+	align-items: center;
+}
+.header .top span img{
+	width: 0.34rem;
+	line-height: 100%;
+}
+.header .top .notice{
+	font-size: 0.24rem;
+	color: #9E9E9E;
+	line-height: 0.34rem;
+}
+.header .bigLihe{
+	display: block;
+	width: 2.26rem;
+	height: 2.55rem;
+	margin: 0.25rem auto;
+}
+.header .shuaxin{
+	display: block;
+	width:0.66rem;
+	height: 0.66rem;
+	margin: 0.3rem auto;
+}
+/************头部区域**************/
+
+/************mian区域**************/
+.main{
+	width: 88%;
+	margin: 0 auto;
+}
+.main .tip{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.24rem;
+	color: #989898;
+	align-items: center;
+	margin-bottom: 0.15rem;
+}
+.main .tip span:nth-child(2){
+	line-height: 0.24rem;
+	display: flex;
+	align-items: center;
+}
+.main .tip img{
+	width: 0.24rem;
+	height: 0.24rem;
+}
+.main .contents ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.main .contents ul li{
+	width: 46%;
+	margin: 0.2rem 0;
+	/* border: 1px solid #EFEFEF; */
+	box-shadow: 0 0 10px #EFEFEF;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.main .contents ul li .item .top{
+	display: flex;
+	justify-content: space-between;
+}
+.main .contents ul li .item .top .left{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	padding: 0.15rem 0 0.1rem 0.2rem;
+	box-sizing: border-box;
+}
+.main .contents ul li .item .top .left .class{
+	font-size: 0.3rem;
+	color: #BDBDBD;
+}
+.main .contents ul li .item .top .left .price{
+	font-size: 0.48rem;
+	font-weight: 600;
+	color: #6A6A6A;
+}
+.main .contents ul li .item .top .left .value{
+	font-size: 0.2rem;
+	color: #DBDBDB;
+}
+.main .contents ul li .item .top .right{
+	flex: 1;
+	padding: 0.2rem 0 0 0.15rem;
+}
+.main .contents ul li .item .top img{
+	width: 0.58rem;
+	height: 0.5rem;
+}
+.main .contents ul li .item .bottom{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 1px solid #F5F5F5;
+	padding: 0.2rem 0.2rem;
+	box-sizing: border-box;
+}
+.main .contents ul li .item .bottom img{
+	width: 0.32rem;
+}
+.main .contents ul li .item .bottom .num{
+	color: #909090;
+	font-size: 0.3rem;
+	
+}
+.main .contents .tip{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0.3rem 0 0.25rem;
+}
+/************mian区域**************/
+
+/************footer区域**************/
+.footer{
+	width: 100%;
+	border-top: 1px solid #E9E9E9;
+	display: flex;
+	justify-content: space-around;
+	padding: 0.3rem 4% 0.35rem;
+	box-sizing: border-box;
+}
+.footer .left{
+	flex: 1;
+	background-color: #red;
+	display: flex;
+	flex-direction: column;
+	padding-left: 0.30rem;
+}
+.footer .right{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 0.35rem;
+}
+.footer .right button{
+	width: 1.50rem;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	background: #69BE49;
+	border: none;
+	color: #fff;
+	font-size: 0.3rem;
+	border-radius: 5px;
+}
+/************footer区域**************/
+
+/************蒙层效果区域**************/
+#mask{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+#mask .content{
+	width: 5.6rem;
+	height: 6.40rem;
+	border-radius: 5px;
+	background: #fff;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/************蒙层效果区域**************/

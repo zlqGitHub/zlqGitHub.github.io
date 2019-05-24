@@ -1,0 +1,149 @@
+/*************公用样式**************/
+html{
+	font-size: 50px;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1208598 */
+  src: url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.eot');
+  src: url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.svg#iconfont') format('svg');
+}
+/*************公用样式**************/
+
+/*************顶部区域**************/
+#top{
+	display: -webkit-flex;
+	display: flex;
+	padding: 0.15rem 0.15rem;
+}
+#top section{
+	flex: 1;
+}
+#top .back{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 0.36rem;
+}
+#top .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.36rem;
+	font-weight: 600;
+}
+#top .wx{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+/*************顶部区域**************/
+
+/*************header区域**************/
+#main{
+	width: 88%;
+	margin: 0.3rem auto;
+}
+#main .header{
+	width: 100%;
+	height: 4.2rem;
+	margin-bottom: 0.48rem;
+	/* border: 1px solid #D9D9D9; */
+	border-radius: 5px;
+	box-shadow: 0 1px 4px #a7a7a7;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+#main .header img{
+	width: 0.66rem;
+	margin: 0.38rem 0 0.27rem;
+}
+#main .header section{
+	width: 100%;
+	display: flex;
+	color: #7D7D7D;
+}
+#main .header section .left,#main .header section .right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#main .header section .left span:nth-child(1),#main .header section .right span:nth-child(1){
+	font-size: 0.42rem;
+}
+#main .header section .left span:nth-child(2),#main .header section .right span:nth-child(2){
+	font-size: 0.32rem;
+}
+
+/*************header区域**************/
+
+/*************contents区域**************/
+#main .contents li{
+	width: 100%;
+	list-style: none;
+	margin-bottom: 0.28rem;
+	border: 1px solid #D9D9D9;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.3rem 0.4rem 0.5rem;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+#main .contents li section{
+	flex: 50%;
+}
+#main .contents li section:nth-child(1){
+	font-size: 0.38rem;
+	font-weight: 600;
+}
+#main .contents li section:nth-child(2){
+	width: 0.33rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color: #F7C11F;
+	font-size: 0.30rem;
+}
+#main .contents li section:nth-child(3){
+	margin-top: 0.3rem;
+}
+#main .contents li section:nth-child(3) span{
+	/* margin-left: 0.1rem; */
+	color: #333;
+	font-size: 0.45rem;
+	font-weight: 900;
+}
+#main .contents li section:nth-child(4){
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #777777;
+	font-size: 0.28rem;
+	margin-top: 0.3rem;
+}
+#main .contents li section:nth-child(4) .name{
+	color: #353535;
+	font-size: 0.28rem;
+	font-weight: 600;
+}
+/*************contents区域**************/
+
+/*************footer区域**************/
+#footer{
+	width: 100%;
+	text-align: center;
+	margin: 0.4rem 0 0.5rem;
+}
+#footer a{
+	font-size: 0.32rem;
+	color: #AAB3C7;
+	text-decoration: none;
+}
+/*************footer区域**************/

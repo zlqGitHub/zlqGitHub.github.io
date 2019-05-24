@@ -71,7 +71,7 @@ html{
 	width: 92%;
 	margin: 0 auto;
 	border-radius: 5px;
-	padding: 0.2rem 0.35rem 0.7rem;
+	padding: 0.2rem 0.35rem 0.2rem;
 	box-sizing: border-box;
 	border: 1px solid #D9D9D9;
 	display: -webkit-flex;
@@ -81,12 +81,12 @@ html{
 }
 .center p{
 	width: 50%;
-	line-height: 0.45rem;
+	line-height: 0.55rem;
 	font-size: 0.28rem;
 }
-.center p:nth-child(2){
+/* .center p:nth-child(2){
 	color: #9C9C9C;
-}
+} */
 .center p:nth-child(2n){
 	display: flex;
 	justify-content: flex-end;
@@ -102,7 +102,8 @@ html{
 /*************中间区域**************/
 
 /*************footer区域**************/
-.footer{
+/* .footer{
+	width: 92%;
 	margin-top: 0.5rem;
 }
 .footer .top{
@@ -164,6 +165,47 @@ html{
 	height: 0.26rem;
 	top:-0.11rem;
 	left:0.65rem;
+} */
+
+.footer{
+	width: 92%;
+	margin: 0.3rem auto;
+	position: relative;
+}
+.footer .liuyan{
+	color: #8895B1;
+	font-size: 0.24rem;
+}
+.footer .des{
+	width: 100%;
+	height: 2.3rem;
+	border-radius: 2px;
+	border: none;
+	resize: none;
+	line-height: 0.7rem;
+	padding: 0.1rem 0.25rem;
+	box-sizing: border-box;
+	background: #F8F8F8;
+	font-size: 0.3rem;
+	color: #333;
+}
+.footer .num{
+	position: absolute;
+	top: 2.3rem;
+	left: 88%;
+}
+.footer button{
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: #09BB07;
+	color: #DBF4DB;
+	border: 0;
+	padding: 0.2rem 0;
+	border-radius: 5px;
+	margin: 0.35rem auto;
+	font-size: 0.36rem;
+	letter-spacing: 0.1rem;
 }
 
 /*************footer区域**************/

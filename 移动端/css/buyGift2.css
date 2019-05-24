@@ -1,4 +1,9 @@
 /************头部区域**************/
+#top i{
+	width: 24px;
+	background: red;
+	font-size: 13px;
+}
 .header{
 	width: 88%;
 	margin: 0.3rem auto;
@@ -77,9 +82,10 @@
 .main .contents ul li .item .top{
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid #F5F5F5;
 }
 .main .contents ul li .item .top .left{
-	flex: 2;
+	flex: 2.5;
 	display: flex;
 	flex-direction: column;
 	padding: 0.15rem 0 0.1rem 0.2rem;
@@ -111,7 +117,6 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	border-top: 1px solid #F5F5F5;
 	padding: 0.2rem 0.2rem;
 	box-sizing: border-box;
 }

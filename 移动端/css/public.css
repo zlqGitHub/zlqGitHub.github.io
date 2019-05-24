@@ -28,6 +28,9 @@ html{
 	align-items: center;
 	font-size: 0.36rem;
 }
+#top .back img{
+	width: 0.2rem;
+}
 #top .title{
 	display: flex;
 	justify-content: center;

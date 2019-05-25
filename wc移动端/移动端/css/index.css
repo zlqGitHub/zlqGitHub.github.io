@@ -1,0 +1,409 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 50px;
+}
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 414px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:95px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+/*body{*/
+/*font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+/*}*/
+a{
+    text-decoration: none;
+}
+.wrapper{
+    /*border: 1px solid red;*/
+    /*margin:0 auto;*/
+
+}
+.wrapper .title{
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0.2rem 0 0.3rem;
+    /*margin: 0 auto;*/
+}
+.swipper-one{
+    margin: 0 auto;
+    display: inline-block;
+    width: 7.5rem;
+    height: 3.61rem;
+    background: url("../img/1.png") ;
+    background-size: 7.5rem 3.61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end ;
+}
+.swipper-one .img1{
+    width: 3.82rem;
+    height: 0.4rem;
+    margin-right: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.swipper-one .img2{
+    width: 0.93rem;
+    height: 0.23rem;
+    margin-right: 0.3rem;
+}
+.swipper-two{
+    position: relative;
+    margin: 0.57rem auto 0;
+    /*margin-left: 0.5rem;*/
+    display: block;
+    width: 6.57rem;
+    height: 2.5rem;
+    background: url("../img/6.png");
+    background-size: 100%;
+    border: 0.03rem solid #fbe217;
+    border-radius: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swipper-two .img3{
+    width: 2.66rem;
+    height: 0.4rem;
+    margin-left: 0.25rem;
+}
+.swipper-two .img4{
+    width: 0.56rem;
+    height: 0.42rem;
+    position: absolute;
+    right: -0.25rem;
+    top: -0.2rem;
+}
+.swipper-two .img5{
+    width: 0.14rem;
+    height: 2.5rem;
+    position: absolute;
+    right: -0.45rem;
+    top:0;
+}
+.swipper-two .img520{
+    width: 0.11rem;
+    height: 0.11rem;
+    position: absolute;
+    left: 3.6rem;
+    top: 1.22rem;
+}
+/*.swipper-two .img6{*/
+    /*width: 4.66rem;*/
+    /*height: 0.32rem;*/
+
+/*}*/
+.swipper-three{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 4.66rem;
+    height: 0.32rem;
+    background: url("../img/13.png");
+    background-size: 100%;
+}
+.swipper-four{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: #CCCCCC;
+    overflow: hidden;
+    border-radius: 0.1rem;
+}
+.swipper-four .swipper-four-back{
+    margin: 0.2rem auto;
+    width: 4.18rem;
+    height: 1.8rem;
+    background: url("../img/17.png");
+    background-size: 100%;
+    display: flex;
+    position: relative;
+}
+.img6{
+    margin: auto;
+    width: 1.58rem;
+    height: 0.4rem;
+}
+.img7{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 1.84rem;
+    top: 0.86rem;
+}
+
+/*five*/
+.swipper-five{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/18.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img8{
+    margin: auto;
+    width: 1.71rem;
+    height: 0.4rem;
+}
+.img9{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 2.95rem;
+    top: 1.05rem;
+}
+
+/*six*/
+.swipper-six{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/21.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img10{
+    margin: auto;
+    width: 2.86rem;
+    height: 0.4rem;
+}
+.img11{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 2.85rem;
+    top: 1.05rem;
+}
+/*seven*/
+.swipper-seven{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/24.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img12{
+    margin: auto;
+    width: 2.06rem;
+    height: 0.4rem;
+}
+.img13{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 3.15rem;
+    top: 1.05rem;
+}
+/*eight*/
+.swipper-eight{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/27.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img14{
+    margin: auto;
+    width: 1.58rem;
+    height: 0.4rem;
+}
+.img15{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 3.00rem;
+    top: 1.10rem;
+}
+/*nine*/
+.swipper-nine{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/30.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img16{
+    margin: auto;
+    width: 1.79rem;
+    height: 0.4rem;
+}
+.img17{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 3.12rem;
+    top: 1.07rem;
+}
+/*ten*/
+.swipper-ten{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/33.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img18{
+    margin: auto;
+    width: 2.52rem;
+    height: 0.41rem;
+}
+.img19{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 2.53rem;
+    top: 1.06rem;
+}
+/*eleven*/
+.swipper-eleven{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/36.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img20{
+    margin: auto;
+    width: 3.9rem;
+    height: 0.4rem;
+}
+.img21{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 4.12rem;
+    top: 1.06rem;
+}
+/*twelve*/
+.swipper-twelve{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/39.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img22{
+    margin: auto;
+    width: 3.45rem;
+    height: 0.4rem;
+}
+.img23{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 2.52rem;
+    top: 1.06rem;
+}
+/*twelve*/
+.swipper-thirtee{
+    display: block;
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 2.2rem;
+    background: url("../img/42.png");
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    display: flex;
+    position: relative;
+}
+.img24{
+    margin: auto;
+    width: 2.98rem;
+    height: 0.4rem;
+}
+.img25{
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 2.32rem;
+    top: 1.06rem;
+}
+/*foutteen*/
+.swipper-fourteen{
+    /*display: block;*/
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 1.1rem;
+    display: flex;
+    position: relative;
+    font-size: 0.28rem;
+    display: flex;
+    line-height: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+.swipper-fourteen div{
+    margin: auto;
+
+}
+.swipper-fourteen div a{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+.swipper-fourteen div a:nth-child(1){
+    border-right: 0.01rem solid #000;
+}

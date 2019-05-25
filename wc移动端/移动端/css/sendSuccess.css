@@ -1,0 +1,130 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 50px;
+}
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 414px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:95px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+/*body{*/
+/*font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+/*}*/
+a{
+    text-decoration: none;
+}
+.title{
+    width: 6.7rem;
+    height: 1rem;
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0.2rem auto;
+    position: relative;
+    /*background: red;*/
+}
+.img1{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.35rem;
+    left: -0.25rem;
+    top: 0.1rem;
+}
+/*sendSuccess*/
+.sendSuccess{
+    width: 6.9rem;
+    height: 4.4rem;
+    margin: 0.2rem auto;
+    /*border: 0.01rem solid #005566;*/
+    font-size: 0.4rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img2{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.4rem;
+}
+/*tips*/
+.tips{
+    width: 6.9rem;
+    height: 0.8rem;
+    margin: 1.3rem auto 0;
+    /*border: 0.01rem solid red;*/
+}
+.tips-info{
+    width: 6.25rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    font-size: 0.26rem;
+    color: #878787;
+    text-align: center;
+}
+/*btn 按钮*/
+.btn{
+    margin: 0.1rem auto 0;
+    width: 6.9rem;
+    height: 0.8rem;
+    display: block;
+    border-radius: 0.1rem;
+    font-size: 0.36rem;
+    background: #09BB07;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+}
+/*foutteen*/
+.swipper-fourteen{
+    /*display: block;*/
+    margin: 0.57rem auto 0;
+    width: 6.57rem;
+    height: 1.1rem;
+    display: flex;
+    /*border: 0.01rem solid red;*/
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.46rem;
+    font-size: 0.26rem;
+    display: flex;
+    line-height: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+.swipper-fourteen div{
+    /*border: 0.01rem solid red;*/
+    margin:0.3rem auto 0rem;
+
+}
+.swipper-fourteen div a{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    color: #576b95;
+    /*font-weight: 700;*/
+
+}
+.swipper-fourteen div a:nth-child(1){
+    border-right: 0.01rem solid #000;
+}

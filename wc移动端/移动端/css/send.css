@@ -1,0 +1,152 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 50px;
+}
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 414px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:95px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+/*body{*/
+/*font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+/*}*/
+a{
+    text-decoration: none;
+}
+.title{
+    width: 6.7rem;
+    height: 1rem;
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0.2rem auto;
+    position: relative;
+    /*background: red;*/
+}
+.img1{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.35rem;
+    left: -0.25rem;
+    top: 0.1rem;
+}
+.year-series{
+    width: 6.9rem;
+    height: 4.42rem;
+    /*border: 0.01rem solid red;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img2{
+    width: 2.49rem;
+    height: 2.95rem;
+    margin-bottom: 0.4rem;
+}
+.img3{
+    width: 1.96rem;
+    height: 1.96rem;
+    border-radius: 50%;
+    opacity: 0.65;
+    position: absolute;
+    top: 0.85em;
+}
+.img4{
+    width: 1.76rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 1.6rem;
+}
+.year-series p{
+    font-size: 0.3rem;
+    font-weight: 700;
+    /*padding-top: 1.44rem;*/
+}
+
+/*allinfo*/
+.allinfo{
+    margin: 0 auto;
+    width: 6.9rem;
+    height: 2.38rem;
+    border: 0.01rem solid #EAEAEA;
+    font-size: 0.28rem;
+    color: #656565;
+}
+.allinfo-one{
+    width: 6.1rem;
+    height: 0.79rem;
+    line-height: 0.79rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*message*/
+.message{
+    width: 6.9rem;
+    height: 3.07rem;
+    /*border: 0.01rem solid #008855;*/
+    margin: 0 auto;
+}
+.message-top{
+    width: 6.9rem;
+    height: 0.67rem;
+    /*border: 0.01rem solid #662855;*/
+    font-size: 0.24rem;
+    color: #576b95;
+    line-height: 0.67rem;
+}
+.message-bottom{
+    width: 6.6rem;
+    height: 2.1rem;
+    padding:0.15rem;
+    border-radius: 0.1rem;
+    background: #F8F8F8;
+    font-size: 0.3rem;
+    color: #656565;
+    position: relative;
+}
+.message-bottom span:nth-child(2){
+    color: #e0e0e0 ;
+    font-size: 0.24rem;
+    position: absolute;
+    right: 0.4rem;
+    bottom:0.2rem;
+}
+
+/*btn 按钮*/
+.btn{
+    margin: 0.7rem auto 0;
+    width: 6.9rem;
+    height: 0.8rem;
+    display: block;
+    border-radius: 0.1rem;
+    font-size: 0.36rem;
+    background: #9DE49C;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+}

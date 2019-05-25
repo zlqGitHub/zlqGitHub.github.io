@@ -1,0 +1,153 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 50px;
+}
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 414px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:95px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+/*body{*/
+/*font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+/*}*/
+a{
+    text-decoration: none;
+}
+.title{
+    width: 6.7rem;
+    height: 1rem;
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0.2rem auto;
+    position: relative;
+    /*background: red;*/
+}
+.img1{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.35rem;
+    left: -0.25rem;
+    top: 0.1rem;
+}
+/*allinfo*/
+.allinfo{
+    width: 6.6rem;
+    height: 4.3rem;
+    border: 0.01rem solid #E6E6E6;
+    margin: 0.1rem auto 0.3rem;
+}
+.allinfo-top{
+    width: 6.6rem;
+    height: 2.6rem;
+    margin: 0.3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*border: 0.01rem solid red;*/
+}
+.img2{
+    width: 0.66rem;
+    height: 0.64rem;
+}
+.allinfo-top .span-one{
+    font-size: 0.3rem;
+    color: #333;
+    /*margin: 0.2rem 0 0.2rem;*/
+}
+.allinfo-top .span-two{
+    font-size: 0.6rem;
+    color: #333;
+    font-weight: 700;
+}
+.allinfo-bottom{
+    width: 6.6rem;
+    height: 1.4rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.allinfo-bottom-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 0.01rem solid red;*/
+    /*align-items: ;*/
+}
+.allinfo-bottom-left span:nth-child(1){
+    font-size: 0.36rem;
+    color: #656565;
+    text-align: center;
+}
+.allinfo-bottom-left span:nth-child(2){
+    font-size: 0.24rem;
+    color: #656565;
+    /*text-align: center;*/
+}
+/*info-one*/
+.info-one{
+    width: 6.6rem;
+    height: 1.9rem;
+    border: 0.01rem solid #E6E6E6;
+    margin: 0.2rem auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-one-top{
+    width: 6.2rem;
+    height: 0.86rem;
+    margin: 0 auto;
+    /*border: 0.01rem solid red;*/
+    line-height: 0.86rem;
+    display: flex;
+    justify-content: space-between;
+ }
+.info-one-top span:nth-child(1){
+    font-size: 0.3rem;
+    color: #000;
+}
+.info-one-top span:nth-child(2){
+    font-size: 0.24rem;
+    color: #333;
+}
+
+/*footer*/
+.footer{
+    width: 6.6rem;
+    height: 1.2rem;
+    margin: 0rem auto 0;
+    /*border: 0.01rem solid red;*/
+    display: flex;
+    text-align: center;
+
+
+}
+.footer a{
+    display: block;
+    margin: auto;
+    font-size: 0.26rem;
+    color: #576b95;
+}

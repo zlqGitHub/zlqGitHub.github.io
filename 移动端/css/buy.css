@@ -1,0 +1,333 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 50px;
+}
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 414px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:95px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+/*body{*/
+/*font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+/*}*/
+a{
+    text-decoration: none;
+}
+.title{
+    width: 6.7rem;
+    height: 1rem;
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0.2rem auto;
+    position: relative;
+    /*background: red;*/
+}
+.img1{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.35rem;
+    left: -0.25rem;
+    top: 0.1rem;
+}
+/*gift*/
+.gift{
+    width: 6.7rem;
+    height: 1rem;
+    /*border: 0.01rem solid red;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gift-left{
+    width: 2rem;
+    height: 1rem;
+    font-size: 0.28rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.img2{
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.22rem;
+}
+.gift-right{
+    width: 2rem;
+    height: 1rem;
+    font-size: 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*giftimg*/
+.giftimg{
+    width: 6.7rem;
+    height: 3.68rem;
+    /*border: 0.01rem solid red;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img3{
+    width: 2.26rem;
+    height: 2.55rem;
+}
+.img4{
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top: 0.47rem;
+}
+
+/*giftbottom*/
+.giftbottom{
+    width: 6.7rem;
+    height: 0.7rem;
+    /*border: 0.01rem solid red;*/
+    margin: 0.3rem auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.giftbottom-left{
+    width: 2rem;
+    height: 1rem;
+    font-size: 0.28rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*gift-luck*/
+.gift-luck{
+    width: 6.7rem;
+    height: 0.8rem;
+    /*border: 0.01rem solid red;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gift-luck-left{
+    width: 2rem;
+    height: 1rem;
+    font-size: 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.img5{
+    width: 0.24rem;
+    height: 0.24rem;
+    /*margin-right: 0.22rem;*/
+}
+.gift-luck-right{
+    width: 2.72rem;
+    height: 1rem;
+    font-size: 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gift-luck-right span{
+    margin-right: 0.13rem;
+}
+/*gift-list*/
+.gift-list{
+    width: 6.7rem;
+    /*height: 0.8rem;*/
+    border-bottom: 0.01rem solid red;
+    margin: 0.1rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list-one{
+    width:3rem;
+    height:2.6rem;
+    border:0.01rem solid #656565;
+    border-radius: 0.1rem;
+    margin-top: 0.28rem;
+
+    /*flex-wrap: wrap;*/
+}
+.list-one-top{
+    display: flex;
+    border-bottom:0.01rem solid #656565;
+    position: relative;
+}
+.list-one-left{
+    width: 2.2rem;
+    height: 1.73rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.list-one-left p{
+    margin-left: 0.2rem;
+}
+.list-one-left p:nth-child(1){
+    font-size: 0.3rem;
+    color: #bcbcbc;
+}
+.list-one-left p:nth-child(2){
+    font-size: 0.48rem;
+    color: #656565;
+}
+.list-one-left p:nth-child(2) span{
+    font-size: 0.24rem;
+    color: #656565;
+}
+.list-one-left p:nth-child(3){
+    font-size: 0.2rem;
+    color: #878787;
+    margin-left: 0.1rem;
+}
+.list-one-right{
+    position: absolute;
+    right: 0.3rem;
+    width: 0.63rem;
+    height: 0.58rem;
+    /*margin-left: 0rem;*/
+}
+.img6{
+    width: 0.63rem;
+    height: 0.58rem;
+}
+.list-one-bottom{
+    width:3rem;
+    height:0.97rem;
+    /*border-bottom: 0.01rem solid #656565;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img7{
+    width: 0.33rem;
+    height: 0.35rem;
+}
+.inform{
+    width: 6.7rem;
+    height: 1.08rem;
+    font-size: 0.22rem;
+    color: #878787;
+    display: flex;
+
+}
+.inform p{
+    margin: auto;
+}
+
+/*footer*/
+.footer{
+    /*width: 6.7rem;*/
+    /*height: 1rem;*/
+    margin: 0 auto;
+    width: 7.5rem;
+    height: 1.3rem;
+}
+.footer-main{
+    width: 6.7rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-main-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main-left span:nth-child(1){
+    font-size: 0.22rem;
+    color: #878787;
+
+}
+.footer-main-left span:nth-child(2){
+    font-size: 0.42rem;
+    color: #333333;
+    font-weight: 700;
+}
+.footer-main-right{
+    width: 1.51rem;
+    height: 0.63rem;
+    background: #69BE49;
+    font-size: 0.30rem;
+    text-align: center;
+    line-height: 0.63rem;
+    color: #fff;
+    margin-right: 0.18rem;
+    border-radius: 0.1rem;
+}
+
+.bond{
+    /*display: ;*/
+    width: 5.6rem;
+    height: 6.4rem;
+    background: #fff;
+    margin: 3.2rem auto 0;
+    /*position: absolute;*/
+    /*top:3.2rem;*/
+    /*left: 0.93rem;*/
+}
+.bond-top{
+    width: 5.6rem;
+    height: 5.43rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bond-top div{
+    margin-bottom: 0.3rem;
+}
+.bond-top div:nth-child(1){
+    font-size: 0.3rem;
+    color: #000000;
+}
+.bond-top div:nth-child(2){
+    width: 4.88rem;
+    height: 3.29rem;
+    background: #EBEBEB;
+}
+.bond-top div:nth-child(3){
+    font-size: 0.24rem;
+    color: #C9C9C9;
+}
+.bond-bottom{
+    width: 5.6rem;
+    height: 0.97rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.3rem;
+    color: #23CA23;
+    border-top: 0.01rem solid #ECEDEE;
+}

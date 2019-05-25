@@ -1,0 +1,183 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 50px;
+}
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 414px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:95px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+/*body{*/
+/*font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+/*}*/
+a{
+    /*text-decoration: none;*/
+}
+.title{
+    width: 6.7rem;
+    height: 1rem;
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0.2rem auto;
+    position: relative;
+    /*background: red;*/
+}
+.img1{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.35rem;
+    left: -0.25rem;
+    top: 0.1rem;
+}
+/*----------------year-series-------------------*/
+.year-series{
+    width: 6.9rem;
+    height: 4.6rem;
+    /*border: 0.01rem solid red;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img2{
+    width: 2.49rem;
+    height: 2.95rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.35;
+}
+.img3{
+    width: 1.96rem;
+    height: 1.96rem;
+    border-radius: 50%;
+    opacity: 0.75;
+    position: absolute;
+    top: 0.85em;
+}
+.img4{
+    width: 1.76rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 1.6rem;
+}
+.year-series p{
+    font-size: 0.3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.year-series p span:nth-child(1){
+    font-size: 0.3rem;
+    color: #D0D0D0;
+}
+.year-series p span:nth-child(2){
+    font-size: 0.36rem;
+    color: #D0D0D0;
+}
+/*---------------------------allinfo----------------------*/
+.allinfo{
+    margin: 0.2rem auto 0;
+    width: 6.9rem;
+    height: 2.5rem;
+    border: 0.01rem solid #EAEAEA;
+    font-size: 0.28rem;
+    color: #656565;
+}
+.allinfo-one{
+    width: 6.1rem;
+    height: 0.79rem;
+    line-height: 0.79rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*--------------inform-------------------*/
+.inform{
+    margin: 0 auto ;
+    width: 6.9rem;
+    height: 0.8rem;
+    /*border: 0.01rem solid #EAEAEA;*/
+    font-size: 0.22rem;
+    color: #878787;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-----------------tell----------------*/
+.tell{
+    margin: 0.2rem auto;
+    width: 6.9rem;
+    height: 0.6rem;
+    border: 0.01rem solid #EAEAEA;
+    background: #F8F8F8;
+    font-size: 0.24rem;
+    color: #878787;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*--------------userlist-------*/
+.userlist{
+    margin: 0.1rem auto;
+    width: 6.9rem;
+    height: 2.77rem;
+    border: 0.01rem solid #EAEAEA;
+    font-size: 0.26rem;
+    color: #656565;
+}
+.user-one{
+    width: 6.9rem;
+    height: 0.65rem;
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.user-one-one{
+    width: 2rem;
+    height: 0.65rem;
+    display: flex;
+    /*justify-content: center;*/
+    position: relative;
+
+}
+.user-one-one span{
+    margin-right: 0.2rem;
+}
+.headimg{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #D1D1D1;
+    border-radius: 0.1rem;
+}
+.img5{
+    width: 0.3rem;
+    height: 0.26rem;
+    position: absolute;
+    left:0.55rem;
+    top: -0.1rem;
+}

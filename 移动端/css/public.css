@@ -1,7 +1,29 @@
 /*************公用样式**************/
-html{
-	font-size: 50px;
+@media screen and (max-width: 374px) {
+    html{
+        /*让rem做一个基数*/
+        font-size: 40px;
+    }
 }
+@media screen and (min-width: 374px) and (max-width: 768px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:100px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        /*让rem做一个基数*/
+        font-size:130px;
+    }
+}
+
 @font-face {
   font-family: 'iconfont';  /* project id 1208598 */
   src: url('//at.alicdn.com/t/font_1208598_a190jg0i7sv.eot');

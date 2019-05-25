@@ -260,8 +260,7 @@
 						}
 						else if($lis[index].index%2 == 0 && $lis[index].index < $lis.length){
 							$lis[index+1].querySelector(".top").style.height = $lis[index].querySelector(".top").offsetHeight * 0.02 + "rem";
-						}
-							
+						}						
 						index++;
 					}else{
 						index++;
@@ -272,12 +271,20 @@
 			
 			//将rgb转换为16进制
 			function colorRGBtoHex(color) {
+				// console.log(color);
 				var rgb = color.split(',');
 				var r = parseInt(rgb[0].split('(')[1]);
 				var g = parseInt(rgb[1]);
 				var b = parseInt(rgb[2].split(')')[0]);
-				var hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+				var hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).substring(1);
+				console.log(hex);
 				return hex;
+			 }
+			 
+			 //点击刷新图标
+			 var shuaxin = document.querySelector(".shuaxin");
+			 shuaxin.onclick = function(){
+				 window.location.reload();
 			 }
 		}
 	</script>

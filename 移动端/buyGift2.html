@@ -238,9 +238,11 @@
 				$($lis[i]).on("click",function(){
 					currentLi = $(this)[0];
 					currentColor = currentLi.querySelector(".class").style.color;
+					console.log(currentColor)
 					result = colorRGBtoHex(currentColor);
 					// console.log(result)
-					$(this).css("border","1px solid"+result);
+					// $(this).css("border","1px solid "+result);
+					$(this).css("border","1px solid "+currentColor);
 					$(this).siblings().css("border","1px solid transparent");
 					// 让蒙层显示
 					// mask.style.display = "block";
@@ -271,11 +273,12 @@
 			
 			//将rgb转换为16进制
 			function colorRGBtoHex(color) {
-				// console.log(color);
+				console.log(color);
 				var rgb = color.split(',');
 				var r = parseInt(rgb[0].split('(')[1]);
 				var g = parseInt(rgb[1]);
 				var b = parseInt(rgb[2].split(')')[0]);
+				console.log(((1 << 24) + (r << 16) + (g << 8) + b).toString(16))
 				var hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).substring(1);
 				console.log(hex);
 				return hex;
